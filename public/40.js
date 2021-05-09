@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[40],{499:function(e,n,s){"use strict";s.r(n);var t={name:"Assists"},a=s(0),i=Object(a.a)(t,(function(){var e=this.$createElement;return(this._self._c||e)("div")}),[],!1,null,"45efaf33",null);n.default=i.exports}}]);
