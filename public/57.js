@@ -1,1 +1,917 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[57],{542:function(o,t,r){"use strict";r.r(t);var e={name:"Dropdowns"},n=r(0),d=Object(n.a)(e,(function(){var o=this,t=o.$createElement,r=o._self._c||t;return r("div",[r("CRow",[r("CCol",{attrs:{col:"12",md:"6"}},[r("CCard",[r("CCardHeader",[r("CIcon",{attrs:{name:"cil-justify-center"}}),o._v(" "),r("strong",[o._v(" Bootstrap Dropdown")]),o._v(" "),r("div",{staticClass:"card-header-actions"},[r("a",{staticClass:"card-header-action",attrs:{href:"https://coreui.io/vue/docs/components/dropdown",rel:"noreferrer noopener",target:"_blank"}},[r("small",{staticClass:"text-muted"},[o._v("docs")])])])],1),o._v(" "),r("CCardBody",[r("div",[r("CDropdown",{staticClass:"m-2",attrs:{"toggler-text":"Dropdown Button",color:"secondary"}},[r("CDropdownItem",[o._v("First Action")]),o._v(" "),r("CDropdownItem",[o._v("Second Action")]),o._v(" "),r("CDropdownItem",[o._v("Third Action")]),o._v(" "),r("CDropdownDivider"),o._v(" "),r("CDropdownItem",[o._v("Something else here...")]),o._v(" "),r("CDropdownItem",{attrs:{disabled:""}},[o._v("Disabled action")])],1)],1),o._v(" "),r("div",[r("CDropdown",{staticClass:"m-2",attrs:{"toggler-text":"Dropdown with divider",color:"secondary"}},[r("CDropdownItem",[o._v("First item")]),o._v(" "),r("CDropdownItem",[o._v("Second item")]),o._v(" "),r("CDropdownDivider"),o._v(" "),r("CDropdownItem",[o._v("Separated Item")])],1)],1),o._v(" "),r("div",[r("CDropdown",{staticClass:"m-2",attrs:{"toggler-text":"Dropdown with header",color:"secondary"}},[r("CDropdownHeader",[o._v("Dropdown header")]),o._v(" "),r("CDropdownItem",[o._v("First item")]),o._v(" "),r("CDropdownItem",[o._v("Second Item")])],1)],1)])],1)],1),o._v(" "),r("CCol",{attrs:{col:"12",md:"6"}},[r("CCard",[r("CCardHeader",[r("CIcon",{attrs:{name:"cil-justify-center"}}),o._v(" "),r("strong",[o._v(" Dropdown ")]),o._v(" "),r("small",[o._v("positioning")])],1),o._v(" "),r("CCardBody",[r("div",[r("CDropdown",{staticClass:"m-2 d-inline-block",attrs:{"toggler-text":"Left align",color:"primary"}},[r("CDropdownItem",[o._v("Action")]),o._v(" "),r("CDropdownItem",[o._v("Another action")]),o._v(" "),r("CDropdownItem",[o._v("Something else here")])],1),o._v(" "),r("CDropdown",{staticClass:"m-2 d-inline-block",attrs:{placement:"bottom-end","toggler-text":"Right align",color:"primary"}},[r("CDropdownItem",[o._v("Action")]),o._v(" "),r("CDropdownItem",[o._v("Another action")]),o._v(" "),r("CDropdownItem",[o._v("Something else here")])],1)],1),o._v(" "),r("div",[r("CDropdown",{staticClass:"m-2",attrs:{"toggler-text":"Drop-Up",color:"info",placement:"top-start"}},[r("CDropdownItem",[o._v("Action")]),o._v(" "),r("CDropdownItem",[o._v("Another action")]),o._v(" "),r("CDropdownItem",[o._v("Something else here")])],1)],1),o._v(" "),r("div",[r("CDropdown",{staticClass:"m-2",attrs:{color:"secondary",offset:[10,5],"toggler-text":"Offset Dropdown"}},[r("CDropdownItem",[o._v("Action")]),o._v(" "),r("CDropdownItem",[o._v("Another action")]),o._v(" "),r("CDropdownItem",[o._v("Something else here")])],1)],1),o._v(" "),r("div",[r("CDropdown",{staticClass:"m-2",attrs:{color:"secondary",split:"","toggler-text":"Split Dropdown"}},[r("CDropdownItem",[o._v("Action")]),o._v(" "),r("CDropdownItem",[o._v("Another action")]),o._v(" "),r("CDropdownItem",[o._v("Something else here...")])],1)],1)])],1)],1)],1),o._v(" "),r("CRow",[r("CCol",{attrs:{col:"12",md:"6"}},[r("CCard",[r("CCardHeader",[r("CIcon",{attrs:{name:"cil-justify-center"}}),o._v(" "),r("strong",[o._v(" Dropdown ")]),o._v(" "),r("small",[o._v("hidden caret")])],1),o._v(" "),r("CCardBody",[r("div",[r("CDropdown",{attrs:{color:"link",size:"lg",caret:!1},scopedSlots:o._u([{key:"toggler-content",fn:function(){return[o._v("\n                🔍"),r("span",{staticClass:"sr-only"},[o._v("Search")])]},proxy:!0}])},[o._v(" "),r("CDropdownItem",[o._v("Action")]),o._v(" "),r("CDropdownItem",[o._v("Another action")]),o._v(" "),r("CDropdownItem",[o._v("Something else here...")])],1)],1)])],1)],1),o._v(" "),r("CCol",{attrs:{col:"12",md:"6"}},[r("CCard",[r("CCardHeader",[r("CIcon",{attrs:{name:"cil-justify-center"}}),o._v(" "),r("strong",[o._v(" Dropdown ")]),o._v(" "),r("small",[o._v("sizing")])],1),o._v(" "),r("CCardBody",[r("div",[r("CDropdown",{staticClass:"m-2 d-inline-block",attrs:{color:"secondary",size:"lg","toggler-text":"Large"}},[r("CDropdownItem",[o._v("Action")]),o._v(" "),r("CDropdownItem",[o._v("Another action")]),o._v(" "),r("CDropdownItem",[o._v("Something else here")])],1),o._v(" "),r("CDropdown",{staticClass:"m-2",attrs:{color:"secondary",size:"lg",split:"","toggler-text":"Large Split"}},[r("CDropdownItem",[o._v("Action")]),o._v(" "),r("CDropdownItem",[o._v("Another action")]),o._v(" "),r("CDropdownItem",[o._v("Something else here...")])],1),o._v(" "),r("br"),o._v(" "),r("CDropdown",{staticClass:"m-2 d-inline-block",attrs:{color:"secondary",size:"sm","toggler-text":"Small"}},[r("CDropdownItem",[o._v("Action")]),o._v(" "),r("CDropdownItem",[o._v("Another action")]),o._v(" "),r("CDropdownItem",[o._v("Something else here...")])],1),o._v(" "),r("CDropdown",{staticClass:"m-2",attrs:{color:"secondary",size:"sm",split:"","toggler-text":"Small Split"}},[r("CDropdownItem",[o._v("Action")]),o._v(" "),r("CDropdownItem",[o._v("Another action")]),o._v(" "),r("CDropdownItem",[o._v("Something else here...")])],1)],1)])],1)],1)],1),o._v(" "),r("CRow",[r("CCol",{attrs:{col:"12",md:"6"}},[r("CCard",[r("CCardHeader",[r("CIcon",{attrs:{name:"cil-justify-center"}}),o._v(" "),r("strong",[o._v(" Dropdown ")]),o._v(" "),r("small",[o._v("headers and accessibility")])],1),o._v(" "),r("CCardBody",[r("div",[r("CDropdown",{staticClass:"m-2",attrs:{"toggler-text":"Dropdown ARIA",color:"primary"}},[r("div",{attrs:{role:"group"}},[r("CDropdownHeader",[o._v("Groups")]),o._v(" "),r("CDropdownItem",[o._v("Add")]),o._v(" "),r("CDropdownItem",[o._v("Delete")])],1),o._v(" "),r("div",{attrs:{role:"group"}},[r("CDropdownHeader",[o._v("Users")]),o._v(" "),r("CDropdownItem",[o._v("Add")]),o._v(" "),r("CDropdownItem",[o._v("Delete")])],1),o._v(" "),r("CDropdownDivider"),o._v(" "),r("CDropdownItem",[o._v("\n                Something "),r("strong",[o._v("not")]),o._v(" associated with user\n              ")])],1)],1)])],1)],1),o._v(" "),r("CCol",{attrs:{col:"12",md:"6"}},[r("CCard",[r("CCardHeader",[r("CIcon",{attrs:{name:"cil-justify-center"}}),o._v(" "),r("strong",[o._v(" Dropdown ")]),o._v(" "),r("small",[r("code",[o._v("color")])])],1),o._v(" "),r("CCardBody",[r("CDropdown",{staticClass:"m-0 d-inline-block",attrs:{size:"sm","toggler-text":"Primary",color:"primary"}},[r("CDropdownItem",[o._v("First Action")]),o._v(" "),r("CDropdownItem",[o._v("Second Action")]),o._v(" "),r("CDropdownItem",[o._v("Third Action")])],1),o._v(" "),r("CDropdown",{staticClass:"m-0 d-inline-block",attrs:{size:"sm","toggler-text":"Secondary",color:"secondary"}},[r("CDropdownItem",[o._v("First Action")]),o._v(" "),r("CDropdownItem",[o._v("Second Action")]),o._v(" "),r("CDropdownItem",[o._v("Third Action")])],1),o._v(" "),r("CDropdown",{staticClass:"m-0 d-inline-block",attrs:{size:"sm","toggler-text":"Success",color:"success"}},[r("CDropdownItem",[o._v("First Action")]),o._v(" "),r("CDropdownItem",[o._v("Second Action")]),o._v(" "),r("CDropdownItem",[o._v("Third Action")])],1),o._v(" "),r("CDropdown",{staticClass:"m-0 d-inline-block",attrs:{size:"sm","toggler-text":"Warning",color:"warning"}},[r("CDropdownItem",[o._v("First Action")]),o._v(" "),r("CDropdownItem",[o._v("Second Action")]),o._v(" "),r("CDropdownItem",[o._v("Third Action")])],1),o._v(" "),r("CDropdown",{staticClass:"m-0 d-inline-block",attrs:{size:"sm","toggler-text":"Danger",color:"danger"}},[r("CDropdownItem",[o._v("First Action")]),o._v(" "),r("CDropdownItem",[o._v("Second Action")]),o._v(" "),r("CDropdownItem",[o._v("Third Action")])],1),o._v(" "),r("CDropdown",{staticClass:"m-0 d-inline-block",attrs:{size:"sm","toggler-text":"Info",color:"info"}},[r("CDropdownItem",[o._v("First Action")]),o._v(" "),r("CDropdownItem",[o._v("Second Action")]),o._v(" "),r("CDropdownItem",[o._v("Third Action")])],1),o._v(" "),r("CDropdown",{staticClass:"m-0 d-inline-block",attrs:{size:"sm","toggler-text":"Light",color:"light"}},[r("CDropdownItem",[o._v("First Action")]),o._v(" "),r("CDropdownItem",[o._v("Second Action")]),o._v(" "),r("CDropdownItem",[o._v("Third Action")])],1),o._v(" "),r("CDropdown",{staticClass:"m-0 d-inline-block",attrs:{size:"sm","toggler-text":"Dark",color:"dark"}},[r("CDropdownItem",[o._v("First Action")]),o._v(" "),r("CDropdownItem",[o._v("Second Action")]),o._v(" "),r("CDropdownItem",[o._v("Third Action")])],1),o._v(" "),r("CDropdown",{staticClass:"m-0 d-inline-block",attrs:{size:"sm","toggler-text":"Link",color:"link"}},[r("CDropdownItem",[o._v("First Action")]),o._v(" "),r("CDropdownItem",[o._v("Second Action")]),o._v(" "),r("CDropdownItem",[o._v("Third Action")])],1)],1)],1)],1)],1)],1)}),[],!1,null,null,null);t.default=d.exports}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[57],{
+
+/***/ "../view/src/views/buttons/ButtonGroups.vue":
+/*!**************************************************!*\
+  !*** ../view/src/views/buttons/ButtonGroups.vue ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ButtonGroups_vue_vue_type_template_id_03a2a5a8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ButtonGroups.vue?vue&type=template&id=03a2a5a8& */ "../view/src/views/buttons/ButtonGroups.vue?vue&type=template&id=03a2a5a8&");
+/* harmony import */ var _ButtonGroups_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ButtonGroups.vue?vue&type=script&lang=js& */ "../view/src/views/buttons/ButtonGroups.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _laravel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../laravel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_laravel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ButtonGroups_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ButtonGroups_vue_vue_type_template_id_03a2a5a8___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ButtonGroups_vue_vue_type_template_id_03a2a5a8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "view/src/views/buttons/ButtonGroups.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "../view/src/views/buttons/ButtonGroups.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ../view/src/views/buttons/ButtonGroups.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _laravel_node_modules_babel_loader_lib_index_js_ref_4_0_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_ButtonGroups_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../laravel/node_modules/babel-loader/lib??ref--4-0!../../../../laravel/node_modules/vue-loader/lib??vue-loader-options!./ButtonGroups.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/buttons/ButtonGroups.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_laravel_node_modules_babel_loader_lib_index_js_ref_4_0_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_ButtonGroups_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "../view/src/views/buttons/ButtonGroups.vue?vue&type=template&id=03a2a5a8&":
+/*!*********************************************************************************!*\
+  !*** ../view/src/views/buttons/ButtonGroups.vue?vue&type=template&id=03a2a5a8& ***!
+  \*********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_ButtonGroups_vue_vue_type_template_id_03a2a5a8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../laravel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../laravel/node_modules/vue-loader/lib??vue-loader-options!./ButtonGroups.vue?vue&type=template&id=03a2a5a8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/buttons/ButtonGroups.vue?vue&type=template&id=03a2a5a8&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_ButtonGroups_vue_vue_type_template_id_03a2a5a8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_ButtonGroups_vue_vue_type_template_id_03a2a5a8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/buttons/ButtonGroups.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../view/src/views/buttons/ButtonGroups.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'ButtonGroups'
+});
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/buttons/ButtonGroups.vue?vue&type=template&id=03a2a5a8&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../view/src/views/buttons/ButtonGroups.vue?vue&type=template&id=03a2a5a8& ***!
+  \***************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "CRow",
+    [
+      _c(
+        "CCol",
+        { attrs: { col: "12" } },
+        [
+          _c(
+            "CCard",
+            [
+              _c(
+                "CCardHeader",
+                [
+                  _c("CIcon", { attrs: { name: "cil-justify-center" } }),
+                  _vm._v(" "),
+                  _c("strong", [_vm._v(" Bootstrap button group")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-header-actions" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "card-header-action",
+                        attrs: {
+                          href:
+                            "https://coreui.io/vue/docs/components/button-components",
+                          rel: "noreferrer noopener",
+                          target: "_blank"
+                        }
+                      },
+                      [
+                        _c("small", { staticClass: "text-muted" }, [
+                          _vm._v("docs")
+                        ])
+                      ]
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("CCardBody", [
+                _c(
+                  "div",
+                  [
+                    _c(
+                      "CButtonGroup",
+                      [
+                        _c("CButton", { attrs: { color: "secondary" } }, [
+                          _vm._v("One")
+                        ]),
+                        _vm._v(" "),
+                        _c("CButton", { attrs: { color: "secondary" } }, [
+                          _vm._v("Two")
+                        ]),
+                        _vm._v(" "),
+                        _c("CButton", { attrs: { color: "secondary" } }, [
+                          _vm._v("Three")
+                        ]),
+                        _vm._v(" "),
+                        _c("CButton", { attrs: { color: "secondary" } }, [
+                          _vm._v("Four")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "CButton",
+                          {
+                            staticClass: "d-sm-down-none",
+                            attrs: { color: "secondary" }
+                          },
+                          [_vm._v("Five")]
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c("br"),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c(
+                      "CButtonGroup",
+                      [
+                        _c(
+                          "CButton",
+                          {
+                            staticClass: "d-sm-down-none",
+                            attrs: { color: "success" }
+                          },
+                          [_vm._v("Success")]
+                        ),
+                        _vm._v(" "),
+                        _c("CButton", { attrs: { color: "info" } }, [
+                          _vm._v("Info")
+                        ]),
+                        _vm._v(" "),
+                        _c("CButton", { attrs: { color: "warning" } }, [
+                          _vm._v("Warn")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "CButton",
+                          {
+                            staticClass: "d-sm-down-none",
+                            attrs: { color: "primary" }
+                          },
+                          [_vm._v("Primary")]
+                        ),
+                        _vm._v(" "),
+                        _c("CButton", { attrs: { color: "danger" } }, [
+                          _vm._v("Danger")
+                        ]),
+                        _vm._v(" "),
+                        _c("CButton", { attrs: { color: "link" } }, [
+                          _vm._v("Link")
+                        ])
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ])
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "CCol",
+        { attrs: { col: "12" } },
+        [
+          _c(
+            "CCard",
+            [
+              _c(
+                "CCardHeader",
+                [
+                  _c("CIcon", { attrs: { name: "cil-justify-center" } }),
+                  _vm._v(" "),
+                  _c("strong", [_vm._v(" Button group ")]),
+                  _vm._v("sizing\n      ")
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("CCardBody", [
+                _c(
+                  "div",
+                  [
+                    _c(
+                      "CButtonGroup",
+                      [
+                        _c("CButton", { attrs: { color: "secondary" } }, [
+                          _vm._v("Left")
+                        ]),
+                        _vm._v(" "),
+                        _c("CButton", { attrs: { color: "secondary" } }, [
+                          _vm._v("Middle")
+                        ]),
+                        _vm._v(" "),
+                        _c("CButton", { attrs: { color: "secondary" } }, [
+                          _vm._v("Right")
+                        ])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c("br"),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c(
+                      "CButtonGroup",
+                      { attrs: { size: "sm" } },
+                      [
+                        _c("CButton", { attrs: { color: "secondary" } }, [
+                          _vm._v("Left")
+                        ]),
+                        _vm._v(" "),
+                        _c("CButton", { attrs: { color: "secondary" } }, [
+                          _vm._v("Middle")
+                        ]),
+                        _vm._v(" "),
+                        _c("CButton", { attrs: { color: "secondary" } }, [
+                          _vm._v("Right")
+                        ])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c("br"),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c(
+                      "CButtonGroup",
+                      { attrs: { size: "lg" } },
+                      [
+                        _c("CButton", { attrs: { color: "secondary" } }, [
+                          _vm._v("Left")
+                        ]),
+                        _vm._v(" "),
+                        _c("CButton", { attrs: { color: "secondary" } }, [
+                          _vm._v("Middle")
+                        ]),
+                        _vm._v(" "),
+                        _c("CButton", { attrs: { color: "secondary" } }, [
+                          _vm._v("Right")
+                        ])
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ])
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "CCol",
+        { attrs: { col: "12" } },
+        [
+          _c(
+            "CCard",
+            [
+              _c(
+                "CCardHeader",
+                [
+                  _c("CIcon", { attrs: { name: "cil-justify-center" } }),
+                  _c("strong", [_vm._v(" Button group ")]),
+                  _vm._v("dropdown support\n      ")
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("CCardBody", [
+                _c(
+                  "div",
+                  [
+                    _c(
+                      "CButtonGroup",
+                      [
+                        _c(
+                          "CButton",
+                          {
+                            staticClass: "d-sm-down-none",
+                            attrs: { color: "secondary" }
+                          },
+                          [_vm._v("Button 1")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "CButton",
+                          {
+                            staticClass: "d-sm-down-none",
+                            attrs: { color: "secondary" }
+                          },
+                          [_vm._v("Button 2")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "CDropdown",
+                          {
+                            attrs: { right: "", text: "Menu", color: "success" }
+                          },
+                          [
+                            _c("CDropdownItem", [_vm._v("Item 1")]),
+                            _vm._v(" "),
+                            _c("CDropdownItem", [_vm._v("Item 2")]),
+                            _vm._v(" "),
+                            _c("CDropdownDivider"),
+                            _vm._v(" "),
+                            _c("CDropdownItem", [_vm._v("Item 3")])
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "CButton",
+                          {
+                            staticClass: "d-sm-down-none",
+                            attrs: { color: "secondary" }
+                          },
+                          [_vm._v("Button 3")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "CDropdown",
+                          {
+                            attrs: {
+                              right: "",
+                              split: "",
+                              text: "Split Menu",
+                              color: "info"
+                            }
+                          },
+                          [
+                            _c("CDropdownItem", [_vm._v("Item 1")]),
+                            _vm._v(" "),
+                            _c("CDropdownItem", [_vm._v("Item 2")]),
+                            _vm._v(" "),
+                            _c("CDropdownDivider"),
+                            _vm._v(" "),
+                            _c("CDropdownItem", [_vm._v("Item 3")])
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ])
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "CCol",
+        { attrs: { col: "12" } },
+        [
+          _c(
+            "CCard",
+            [
+              _c(
+                "CCardHeader",
+                [
+                  _c("CIcon", { attrs: { name: "cil-justify-center" } }),
+                  _vm._v(" "),
+                  _c("strong", [_vm._v(" Button group ")]),
+                  _vm._v("vertical variation\n      ")
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("CCardBody", [
+                _c(
+                  "div",
+                  [
+                    _c(
+                      "CButtonGroup",
+                      { attrs: { vertical: "" } },
+                      [
+                        _c("CButton", { attrs: { color: "secondary" } }, [
+                          _vm._v("Top")
+                        ]),
+                        _vm._v(" "),
+                        _c("CButton", { attrs: { color: "secondary" } }, [
+                          _vm._v("Middle")
+                        ]),
+                        _vm._v(" "),
+                        _c("CButton", { attrs: { color: "secondary" } }, [
+                          _vm._v("Bottom")
+                        ])
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ])
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "CCol",
+        { attrs: { col: "12" } },
+        [
+          _c(
+            "CCard",
+            [
+              _c(
+                "CCardHeader",
+                [
+                  _c("CIcon", { attrs: { name: "cil-justify-center" } }),
+                  _vm._v(" "),
+                  _c("strong", [_vm._v(" Button toolbar ")]),
+                  _vm._v(" "),
+                  _c("small", [_vm._v("with button groups")])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "CCardBody",
+                [
+                  _c(
+                    "CButtonToolbar",
+                    { attrs: { "aria-label": "Toolbar with button groups" } },
+                    [
+                      _c(
+                        "CButtonGroup",
+                        { staticClass: "mx-1" },
+                        [
+                          _c(
+                            "CButton",
+                            {
+                              staticClass: "d-sm-down-none",
+                              attrs: { color: "secondary" }
+                            },
+                            [_vm._v("«")]
+                          ),
+                          _vm._v(" "),
+                          _c("CButton", { attrs: { color: "secondary" } }, [
+                            _vm._v("‹")
+                          ])
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "CButtonGroup",
+                        { staticClass: "mx-1" },
+                        [
+                          _c(
+                            "CButton",
+                            {
+                              staticClass: "d-sm-down-none",
+                              attrs: { color: "secondary" }
+                            },
+                            [_vm._v("Edit")]
+                          ),
+                          _vm._v(" "),
+                          _c("CButton", { attrs: { color: "secondary" } }, [
+                            _vm._v("Undo")
+                          ]),
+                          _vm._v(" "),
+                          _c("CButton", { attrs: { color: "secondary" } }, [
+                            _vm._v("Redo")
+                          ])
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "CButtonGroup",
+                        { staticClass: "mx-1" },
+                        [
+                          _c("CButton", { attrs: { color: "secondary" } }, [
+                            _vm._v("›")
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "CButton",
+                            {
+                              staticClass: "d-sm-down-none",
+                              attrs: { color: "secondary" }
+                            },
+                            [_vm._v("»")]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("hr", { staticClass: "d-sm-down-none" }),
+                  _vm._v(" "),
+                  _c(
+                    "CButtonToolbar",
+                    {
+                      staticClass: "d-sm-down-none",
+                      attrs: {
+                        "aria-label":
+                          "Toolbar with button groups and input groups"
+                      }
+                    },
+                    [
+                      _c(
+                        "CButtonGroup",
+                        { staticClass: "mx-1", attrs: { size: "sm" } },
+                        [
+                          _c("CButton", { attrs: { color: "secondary" } }, [
+                            _vm._v("New")
+                          ]),
+                          _vm._v(" "),
+                          _c("CButton", { attrs: { color: "secondary" } }, [
+                            _vm._v("Edit")
+                          ])
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("CInput", {
+                        staticClass: "mb-0 w-25 mx-1",
+                        attrs: {
+                          size: "sm",
+                          append: ".00",
+                          value: "100",
+                          prepend: "$"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("CSelect", {
+                        staticClass: "mb-0 w-25 mx-1",
+                        attrs: {
+                          size: "sm",
+                          value: "Medium",
+                          options: ["Large", "Medium", "Small"],
+                          custom: "",
+                          prepend: "Size"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "CButtonGroup",
+                        { staticClass: "mx-1", attrs: { size: "sm" } },
+                        [
+                          _c("CButton", { attrs: { color: "secondary" } }, [
+                            _vm._v("Save")
+                          ]),
+                          _vm._v(" "),
+                          _c("CButton", { attrs: { color: "secondary" } }, [
+                            _vm._v("Cancel")
+                          ])
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c(
+                    "CButtonToolbar",
+                    {
+                      attrs: {
+                        "aria-label":
+                          "Toolbar with button groups and dropdown menu"
+                      }
+                    },
+                    [
+                      _c(
+                        "CButtonGroup",
+                        { staticClass: "mx-1 d-sm-down-none" },
+                        [
+                          _c("CButton", { attrs: { color: "secondary" } }, [
+                            _vm._v("New")
+                          ]),
+                          _vm._v(" "),
+                          _c("CButton", { attrs: { color: "secondary" } }, [
+                            _vm._v("Edit")
+                          ]),
+                          _vm._v(" "),
+                          _c("CButton", { attrs: { color: "secondary" } }, [
+                            _vm._v("Undo")
+                          ])
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "CDropdown",
+                        {
+                          staticClass: "mx-1",
+                          attrs: {
+                            color: "secondary",
+                            placement: "bottom-end",
+                            "button-content": "Menu"
+                          }
+                        },
+                        [
+                          _c("CDropdownItem", [_vm._v("Item 1")]),
+                          _vm._v(" "),
+                          _c("CDropdownItem", [_vm._v("Item 2")]),
+                          _vm._v(" "),
+                          _c("CDropdownItem", [_vm._v("Item 3")])
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "CButtonGroup",
+                        { staticClass: "mx-1" },
+                        [
+                          _c("CButton", { attrs: { color: "secondary" } }, [
+                            _vm._v("Save")
+                          ]),
+                          _vm._v(" "),
+                          _c("CButton", { attrs: { color: "secondary" } }, [
+                            _vm._v("Cancel")
+                          ])
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ })
+
+}]);

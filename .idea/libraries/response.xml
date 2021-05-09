@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="response">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/vendor/spatie/laravel-medialibrary/tests/Feature/response.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

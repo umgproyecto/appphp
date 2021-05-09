@@ -1,1 +1,115 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[52],{477:function(e,t,o){"use strict";o.r(t);var a={name:"ShowBreadFieldCard",props:{formField:Object},computed:{}},n=o(0),r=Object(n.a)(a,(function(){var e=this,t=e.$createElement,o=e._self._c||t;return o("CCard",[o("CCardHeader",[o("h4",[e._v(e._s(e.formField.name))])]),e._v(" "),o("CCardBody",[o("p",[e._v("Field type:  "),o("strong",[e._v(e._s(e.formField.type))])]),e._v(" "),o("p",[e._v("Optional relation table name: "),o("strong",[e._v(e._s(e.formField.relation_table))])]),e._v(" "),o("p",[e._v("Optional column name to print in relation table: "),o("strong",[e._v(e._s(e.formField.relation_column))])]),e._v(" "),o("p",[e._v("Browse:      "+e._s(e.formField.browse))]),e._v(" "),o("p",[e._v("Read:        "+e._s(e.formField.read))]),e._v(" "),o("p",[e._v("Edit:        "+e._s(e.formField.edit))]),e._v(" "),o("p",[e._v("Add:         "+e._s(e.formField.add))])])],1)}),[],!1,null,null,null).exports,l=o(2),d=o.n(l),i={name:"Bread",components:{ShowBreadFieldCard:r},data:function(){return{form:{name:"",table_name:"",pagination:"",read:"",edit:"",add:"",delete:""},formFields:[]}},methods:{goBack:function(){this.$router.go(-1)}},mounted:function(){var e=this;d.a.get("/api/bread/"+e.$route.params.id+"?token="+localStorage.getItem("api_token")).then((function(t){e.form=t.data.form,e.formFields=t.data.formFields})).catch((function(t){console.log(t),e.$router.push({path:"/login"})}))}},_=Object(n.a)(i,(function(){var e=this,t=e.$createElement,o=e._self._c||t;return o("CRow",[o("CCol",{attrs:{col:"12",lg:"6"}},[o("CCard",{attrs:{"no-header":""}},[o("CCardBody",[o("h3",[e._v("Single BREAD")]),e._v(" "),o("CButton",{attrs:{color:"primary"},on:{click:e.goBack}},[e._v("Back")]),e._v(" "),o("p",{staticClass:"mt-2"},[e._v("Form name: "),o("strong",[e._v(e._s(e.form.name))])]),e._v(" "),o("p",[e._v("Database table name: "),o("strong",[e._v(e._s(e.form.table_name))])]),e._v(" "),o("p",[e._v("Records on one page of table: "),o("strong",[e._v(e._s(e.form.pagination))])]),e._v(" "),o("p",[e._v("Enable Show button in table: "+e._s(e.form.read))]),e._v(" "),o("p",[e._v("Enable Edit button in table: "+e._s(e.form.edit))]),e._v(" "),o("p",[e._v("Enable Add button in table: "+e._s(e.form.add))]),e._v(" "),o("p",[e._v("Enable Delete button in table: "+e._s(e.form.delete))]),e._v(" "),e._l(e.formFields,(function(e){return o("ShowBreadFieldCard",{key:e.id,attrs:{formField:e}})})),e._v(" "),o("CButton",{attrs:{color:"primary"},on:{click:e.goBack}},[e._v("Back")])],2)],1)],1)],1)}),[],!1,null,null,null);t.default=_.exports}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[52],{
+
+/***/ "../view/src/views/base/scm/Inventories.vue":
+/*!**************************************************!*\
+  !*** ../view/src/views/base/scm/Inventories.vue ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Inventories_vue_vue_type_template_id_3e3eb342_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Inventories.vue?vue&type=template&id=3e3eb342&scoped=true& */ "../view/src/views/base/scm/Inventories.vue?vue&type=template&id=3e3eb342&scoped=true&");
+/* harmony import */ var _Inventories_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Inventories.vue?vue&type=script&lang=js& */ "../view/src/views/base/scm/Inventories.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _laravel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../laravel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_laravel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Inventories_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Inventories_vue_vue_type_template_id_3e3eb342_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Inventories_vue_vue_type_template_id_3e3eb342_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "3e3eb342",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "view/src/views/base/scm/Inventories.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "../view/src/views/base/scm/Inventories.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ../view/src/views/base/scm/Inventories.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _laravel_node_modules_babel_loader_lib_index_js_ref_4_0_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Inventories_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../laravel/node_modules/babel-loader/lib??ref--4-0!../../../../../laravel/node_modules/vue-loader/lib??vue-loader-options!./Inventories.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/base/scm/Inventories.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_laravel_node_modules_babel_loader_lib_index_js_ref_4_0_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Inventories_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "../view/src/views/base/scm/Inventories.vue?vue&type=template&id=3e3eb342&scoped=true&":
+/*!*********************************************************************************************!*\
+  !*** ../view/src/views/base/scm/Inventories.vue?vue&type=template&id=3e3eb342&scoped=true& ***!
+  \*********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Inventories_vue_vue_type_template_id_3e3eb342_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../laravel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../laravel/node_modules/vue-loader/lib??vue-loader-options!./Inventories.vue?vue&type=template&id=3e3eb342&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/base/scm/Inventories.vue?vue&type=template&id=3e3eb342&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Inventories_vue_vue_type_template_id_3e3eb342_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Inventories_vue_vue_type_template_id_3e3eb342_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/base/scm/Inventories.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../view/src/views/base/scm/Inventories.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "Inventories"
+});
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/base/scm/Inventories.vue?vue&type=template&id=3e3eb342&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../view/src/views/base/scm/Inventories.vue?vue&type=template&id=3e3eb342&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div")
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ })
+
+}]);

@@ -1,1 +1,706 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[29],{550:function(s,a,r){"use strict";r.r(a);var e={name:"ProgressBars",data:function(){return{counter:73,max:100,max2:50,value:33.333333333,value3:75,bars:[{color:"success",value:75},{color:"info",value:75},{color:"warning",value:75},{color:"danger",value:75},{color:"primary",value:75},{color:"secondary",value:75},{color:"dark",value:75}],timer:null,striped:!0,animate:!0,max3:100,values:[15,30,20]}},methods:{clicked:function(){this.counter=Math.random()*this.max}},mounted:function(){var s=this;this.timer=setInterval((function(){s.bars.forEach((function(s){s.value=25+75*Math.random()}))}),2e3)},beforeDestroy:function(){clearInterval(this.timer),this.timer=null}},t=r(0),o=Object(t.a)(e,(function(){var s=this,a=s.$createElement,r=s._self._c||a;return r("div",[r("CCard",[r("CCardHeader",[r("CIcon",{attrs:{name:"cil-justify-center"}}),s._v(" "),r("strong",[s._v(" Bootstrap Progress")]),s._v(" "),r("div",{staticClass:"card-header-actions"},[r("a",{staticClass:"card-header-action",attrs:{href:"https://coreui.io/vue/docs/components/progress",rel:"noreferrer noopener",target:"_blank"}},[r("small",{staticClass:"text-muted"},[s._v("docs")])])])],1),s._v(" "),r("CCardBody",[r("CProgress",{attrs:{value:s.counter,max:s.max,"show-percentage":"",animated:""}}),s._v(" "),r("CProgress",{staticClass:"mt-1",attrs:{max:s.max,"show-value":""}},[r("CProgressBar",{attrs:{value:.6*s.counter,color:"success"}}),s._v(" "),r("CProgressBar",{attrs:{value:.25*s.counter,color:"warning"}}),s._v(" "),r("CProgressBar",{attrs:{value:.15*s.counter,color:"danger"}})],1),s._v(" "),r("CButton",{staticClass:"mt-4",attrs:{color:"secondary"},on:{click:s.clicked}},[s._v("\n        Click me to animate progress bars\n      ")])],1)],1),s._v(" "),r("CCard",[r("CCardHeader",[r("CIcon",{attrs:{name:"cil-justify-center"}}),s._v(" "),r("strong",[s._v(" Progress ")]),r("small",[s._v("labels")])],1),s._v(" "),r("CCardBody",[r("h6",[s._v("No label")]),s._v(" "),r("CProgress",{staticClass:"mb-3",attrs:{value:s.value,max:s.max2}}),s._v(" "),r("h6",[s._v("Value label")]),s._v(" "),r("CProgress",{staticClass:"mb-3",attrs:{value:s.value,max:s.max2,"show-value":""}}),s._v(" "),r("h6",[s._v("Progress label")]),s._v(" "),r("CProgress",{staticClass:"mb-3",attrs:{value:s.value,max:s.max2,"show-percentage":""}}),s._v(" "),r("h6",[s._v("Value label with precision")]),s._v(" "),r("CProgress",{staticClass:"mb-3",attrs:{value:s.value,max:s.max2,precision:2,"show-value":""}}),s._v(" "),r("h6",[s._v("Progress label with precision")]),s._v(" "),r("CProgress",{staticClass:"mb-3",attrs:{value:s.value,max:s.max2,precision:2,"show-percentage":""}})],1)],1),s._v(" "),r("CCard",[r("CCardHeader",[r("CIcon",{attrs:{name:"cil-justify-center"}}),s._v(" "),r("strong",[s._v(" Progress ")]),s._v(" "),r("small",[s._v("width")])],1),s._v(" "),r("CCardBody",[r("h6",[s._v("Default width")]),s._v(" "),r("CProgress",{staticClass:"mb-3",attrs:{value:s.value3}}),s._v(" "),r("h6",[s._v("Custom widths")]),s._v(" "),r("CProgress",{staticClass:"w-75 mb-2",attrs:{value:s.value3}}),s._v(" "),r("CProgress",{staticClass:"w-50 mb-2",attrs:{value:s.value3}}),s._v(" "),r("CProgress",{staticClass:"w-25",attrs:{value:s.value3}})],1)],1),s._v(" "),r("CCard",[r("CCardHeader",[r("CIcon",{attrs:{name:"cil-justify-center"}}),s._v(" "),r("strong",[s._v(" Progress ")]),s._v(" "),r("small",[s._v("height")])],1),s._v(" "),r("CCardBody",[r("h6",[s._v("Default height")]),s._v(" "),r("CProgress",{staticClass:"mb-3",attrs:{value:s.value3,"show-percentage":""}}),s._v(" "),r("h6",[s._v("Custom heights")]),s._v(" "),r("CProgress",{staticClass:"mb-2",attrs:{height:"2rem",value:s.value3,"show-percentage":""}}),s._v(" "),r("CProgress",{staticClass:"mb-2",attrs:{height:"20px",value:s.value3,"show-percentage":""}}),s._v(" "),r("CProgress",{attrs:{height:"2px",value:s.value3}})],1)],1),s._v(" "),r("CCard",[r("CCardHeader",[r("CIcon",{attrs:{name:"cil-justify-center"}}),s._v(" "),r("strong",[s._v(" Progress ")]),s._v(" "),r("small",[s._v("colors")])],1),s._v(" "),r("CCardBody",s._l(s.bars,(function(a,e){return r("div",{key:e,staticClass:"row mb-1"},[r("div",{staticClass:"col-sm-2"},[s._v(s._s(a.color)+":")]),s._v(" "),r("div",{staticClass:"col-sm-10 pt-1"},[r("CProgress",{key:a.color,attrs:{value:a.value,color:a.color}})],1)])})),0)],1),s._v(" "),r("CCard",[r("CCardHeader",[r("CIcon",{attrs:{name:"cil-justify-center"}}),s._v(" "),r("strong",[s._v(" Progress ")]),s._v(" "),r("small",[s._v("striped")])],1),s._v(" "),r("CCardBody",[r("CProgress",{staticClass:"mb-2",attrs:{value:25,color:"success",striped:s.striped}}),s._v(" "),r("CProgress",{staticClass:"mb-2",attrs:{value:50,color:"info",striped:s.striped}}),s._v(" "),r("CProgress",{staticClass:"mb-2",attrs:{value:75,color:"warning",striped:s.striped}}),s._v(" "),r("CProgress",{staticClass:"mb-2",attrs:{value:100,color:"danger",striped:s.striped}}),s._v(" "),r("CButton",{attrs:{color:"secondary"},on:{click:function(a){s.striped=!s.striped}}},[s._v("\n        "+s._s(s.striped?"Remove":"Add")+" Striped\n      ")])],1)],1),s._v(" "),r("CCard",[r("CCardHeader",[r("CIcon",{attrs:{name:"cil-justify-center"}}),s._v(" "),r("strong",[s._v(" Progress ")]),s._v(" "),r("small",[s._v("animated")])],1),s._v(" "),r("CCardBody",[r("CProgress",{staticClass:"mb-2",attrs:{value:25,color:"success",striped:"",animated:s.animate}}),s._v(" "),r("CProgress",{staticClass:"mb-2",attrs:{value:50,color:"info",striped:"",animated:s.animate}}),s._v(" "),r("CProgress",{staticClass:"mb-2",attrs:{value:75,color:"warning",striped:"",animated:s.animate}}),s._v(" "),r("CProgress",{staticClass:"mb-3",attrs:{value:100,color:"danger",animated:s.animate}}),s._v(" "),r("CButton",{attrs:{color:"secondary"},on:{click:function(a){s.animate=!s.animate}}},[s._v("\n        "+s._s(s.animate?"Stop":"Start")+" Animation\n      ")])],1)],1),s._v(" "),r("CCard",[r("CCardHeader",[r("CIcon",{attrs:{name:"cil-justify-center"}}),s._v(" "),r("strong",[s._v(" Progress ")]),s._v(" "),r("small",[s._v("multiple bars")])],1),s._v(" "),r("CCardBody",[r("CProgress",{staticClass:"mb-3",attrs:{max:s.max3}},[r("CProgressBar",{attrs:{color:"primary",value:s.values[0]}}),s._v(" "),r("CProgressBar",{attrs:{color:"success",value:s.values[1]}}),s._v(" "),r("CProgressBar",{attrs:{color:"info",value:s.values[2]}})],1),s._v(" "),r("CProgress",{staticClass:"mb-3",attrs:{"show-percentage":"",max:s.max3}},[r("CProgressBar",{attrs:{color:"primary",value:s.values[0]}}),s._v(" "),r("CProgressBar",{attrs:{color:"success",value:s.values[1]}}),s._v(" "),r("CProgressBar",{attrs:{color:"info",value:s.values[2]}})],1),s._v(" "),r("CProgress",{staticClass:"mb-3",attrs:{"show-value":"",striped:"",max:s.max3}},[r("CProgressBar",{attrs:{color:"primary",value:s.values[0]}}),s._v(" "),r("CProgressBar",{attrs:{color:"success",value:s.values[1]}}),s._v(" "),r("CProgressBar",{attrs:{color:"info",value:s.values[2]}})],1),s._v(" "),r("CProgress",{staticClass:"mb-3",attrs:{max:s.max3}},[r("CProgressBar",{attrs:{color:"primary",value:s.values[0],"show-percentage":""}}),s._v(" "),r("CProgressBar",{attrs:{color:"success",value:s.values[1],animated:"","show-percentage":""}}),s._v(" "),r("CProgressBar",{attrs:{color:"info",value:s.values[2],striped:"","show-percentage":""}})],1)],1)],1)],1)}),[],!1,null,null,null);a.default=o.exports}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[29],{
+
+/***/ "../view/src/views/base/Navbars.vue":
+/*!******************************************!*\
+  !*** ../view/src/views/base/Navbars.vue ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Navbars_vue_vue_type_template_id_57af6e1d___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navbars.vue?vue&type=template&id=57af6e1d& */ "../view/src/views/base/Navbars.vue?vue&type=template&id=57af6e1d&");
+/* harmony import */ var _Navbars_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbars.vue?vue&type=script&lang=js& */ "../view/src/views/base/Navbars.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _laravel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../laravel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_laravel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Navbars_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Navbars_vue_vue_type_template_id_57af6e1d___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Navbars_vue_vue_type_template_id_57af6e1d___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "view/src/views/base/Navbars.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "../view/src/views/base/Navbars.vue?vue&type=script&lang=js&":
+/*!*******************************************************************!*\
+  !*** ../view/src/views/base/Navbars.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _laravel_node_modules_babel_loader_lib_index_js_ref_4_0_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbars_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../laravel/node_modules/babel-loader/lib??ref--4-0!../../../../laravel/node_modules/vue-loader/lib??vue-loader-options!./Navbars.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/base/Navbars.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_laravel_node_modules_babel_loader_lib_index_js_ref_4_0_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbars_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "../view/src/views/base/Navbars.vue?vue&type=template&id=57af6e1d&":
+/*!*************************************************************************!*\
+  !*** ../view/src/views/base/Navbars.vue?vue&type=template&id=57af6e1d& ***!
+  \*************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbars_vue_vue_type_template_id_57af6e1d___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../laravel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../laravel/node_modules/vue-loader/lib??vue-loader-options!./Navbars.vue?vue&type=template&id=57af6e1d& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/base/Navbars.vue?vue&type=template&id=57af6e1d&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbars_vue_vue_type_template_id_57af6e1d___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbars_vue_vue_type_template_id_57af6e1d___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/base/Navbars.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../view/src/views/base/Navbars.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'Navbars',
+  data: function data() {
+    return {
+      show: false,
+      navbarText: false,
+      navbarDropdown: false
+    };
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/base/Navbars.vue?vue&type=template&id=57af6e1d&":
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../view/src/views/base/Navbars.vue?vue&type=template&id=57af6e1d& ***!
+  \*******************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c(
+        "CCard",
+        [
+          _c(
+            "CCardHeader",
+            [
+              _c("CIcon", { attrs: { name: "cil-justify-center" } }),
+              _vm._v(" "),
+              _c("strong", [_vm._v(" Bootstrap Navbar ")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-header-actions" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "card-header-action",
+                    attrs: {
+                      href: "https://coreui.io/vue/docs/components/navbar",
+                      rel: "noreferrer noopener",
+                      target: "_blank"
+                    }
+                  },
+                  [_c("small", { staticClass: "text-muted" }, [_vm._v("docs")])]
+                )
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "CCardBody",
+            [
+              _c(
+                "CNavbar",
+                { attrs: { expandable: "md", color: "info" } },
+                [
+                  _c("CToggler", {
+                    attrs: { inNavbar: "" },
+                    on: {
+                      click: function($event) {
+                        _vm.show = !_vm.show
+                      }
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("CNavbarBrand", { attrs: { href: "#" } }, [
+                    _vm._v("NavBar")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "CCollapse",
+                    { attrs: { show: _vm.show, navbar: "" } },
+                    [
+                      _c(
+                        "CNavbarNav",
+                        [
+                          _c("CNavItem", { attrs: { href: "#" } }, [
+                            _vm._v("Link")
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "CNavItem",
+                            { attrs: { href: "#", disabled: "" } },
+                            [_vm._v("Disabled")]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "CNavbarNav",
+                        { staticClass: "ml-auto" },
+                        [
+                          _c(
+                            "CForm",
+                            {
+                              staticClass: "align-middle",
+                              attrs: { inline: "" }
+                            },
+                            [
+                              _c("CInput", {
+                                staticClass: "mr-2 my-0",
+                                attrs: { placeholder: "Search", size: "sm" }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "CButton",
+                                { attrs: { color: "light", size: "sm" } },
+                                [
+                                  _vm._v(
+                                    "\n                Search\n              "
+                                  )
+                                ]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "CDropdown",
+                            { attrs: { "toggler-text": "Lang", "in-nav": "" } },
+                            [
+                              _c("CDropdownItem", [_vm._v("EN")]),
+                              _vm._v(" "),
+                              _c("CDropdownItem", [_vm._v("ES")]),
+                              _vm._v(" "),
+                              _c("CDropdownItem", [_vm._v("RU")]),
+                              _vm._v(" "),
+                              _c("CDropdownItem", [_vm._v("FA")])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "CDropdown",
+                            { attrs: { "in-nav": "", "toggler-text": "User" } },
+                            [
+                              _c("CDropdownItem", [_vm._v("Profile")]),
+                              _vm._v(" "),
+                              _c("CDropdownItem", [_vm._v("Signout")])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "CCard",
+        [
+          _c(
+            "CCardHeader",
+            [
+              _c("CIcon", { attrs: { name: "cil-justify-center" } }),
+              _vm._v(" "),
+              _c("strong", [_vm._v(" Navbar ")]),
+              _vm._v(" "),
+              _c("small", [_vm._v("brand")])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "CCardBody",
+            [
+              _c(
+                "CNavbar",
+                { attrs: { color: "faded", light: "" } },
+                [
+                  _c("CNavbarBrand", { attrs: { href: "#" } }, [
+                    _c("img", {
+                      staticClass: "d-inline-block align-top",
+                      attrs: {
+                        src: "https://placekitten.com/g/30/30",
+                        alt: "CoreuiVue"
+                      }
+                    }),
+                    _vm._v("\n          CoreuiVue\n        ")
+                  ])
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "CCard",
+        [
+          _c(
+            "CCardHeader",
+            [
+              _c("CIcon", { attrs: { name: "cil-justify-center" } }),
+              _vm._v(" "),
+              _c("strong", [_vm._v(" Navbar ")]),
+              _vm._v(" "),
+              _c("small", [_vm._v("text")])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "CCardBody",
+            [
+              _c(
+                "CNavbar",
+                { attrs: { toggleable: "sm", light: "", color: "light" } },
+                [
+                  _c("CToggler", {
+                    attrs: { inNavbar: "" },
+                    on: {
+                      click: function($event) {
+                        _vm.navbarText = !_vm.navbarText
+                      }
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("CNavbarBrand", [_vm._v("CoreuiVue")]),
+                  _vm._v(" "),
+                  _c(
+                    "CCollapse",
+                    { attrs: { show: _vm.navbarText, navbar: "" } },
+                    [
+                      _c(
+                        "CNavbarNav",
+                        [_c("CNavbarText", [_vm._v("Navbar text")])],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "CCard",
+        [
+          _c(
+            "CCardHeader",
+            [
+              _c("CIcon", { attrs: { name: "cil-justify-center" } }),
+              _vm._v(" "),
+              _c("strong", [_vm._v(" Navbar ")]),
+              _vm._v(" "),
+              _c("small", [_vm._v("dropdown")])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "CCardBody",
+            [
+              _c(
+                "CNavbar",
+                { attrs: { expandable: "sm", color: "primary" } },
+                [
+                  _c("CToggler", {
+                    attrs: { inNavbar: "" },
+                    on: {
+                      click: function($event) {
+                        _vm.navbarDropdown = !_vm.navbarDropdown
+                      }
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "CCollapse",
+                    { attrs: { show: _vm.navbarDropdown, navbar: "" } },
+                    [
+                      _c(
+                        "CNavbarNav",
+                        [
+                          _c("CNavItem", { attrs: { href: "#" } }, [
+                            _vm._v("Home")
+                          ]),
+                          _vm._v(" "),
+                          _c("CNavItem", { attrs: { href: "#" } }, [
+                            _vm._v("Link")
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "CDropdown",
+                            { attrs: { "toggler-text": "Lang", "in-nav": "" } },
+                            [
+                              _c("CDropdownItem", [_vm._v("EN")]),
+                              _vm._v(" "),
+                              _c("CDropdownItem", [_vm._v("ES")]),
+                              _vm._v(" "),
+                              _c("CDropdownItem", [_vm._v("RU")]),
+                              _vm._v(" "),
+                              _c("CDropdownItem", [_vm._v("FA")])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "CDropdown",
+                            { attrs: { "toggler-text": "User", "in-nav": "" } },
+                            [
+                              _c("CDropdownItem", [_vm._v("Account")]),
+                              _vm._v(" "),
+                              _c("CDropdownItem", [_vm._v("Settings")])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "CCard",
+        [
+          _c(
+            "CCardHeader",
+            [
+              _c("CIcon", { attrs: { name: "cil-justify-center" } }),
+              _vm._v(" "),
+              _c("strong", [_vm._v(" Navbar ")]),
+              _vm._v(" "),
+              _c("small", [_vm._v("form")])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "CCardBody",
+            [
+              _c(
+                "CNavbar",
+                { attrs: { light: "", color: "light" } },
+                [
+                  _c(
+                    "CForm",
+                    { attrs: { inline: "" } },
+                    [
+                      _c("CInput", {
+                        staticClass: "mr-sm-2",
+                        attrs: { placeholder: "Search", size: "sm" }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "CButton",
+                        {
+                          staticClass: "my-2 my-sm-0",
+                          attrs: { color: "outline-success", type: "submit" }
+                        },
+                        [_vm._v("Search")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "CCard",
+        [
+          _c(
+            "CCardHeader",
+            [
+              _c("CIcon", { attrs: { name: "cil-justify-center" } }),
+              _vm._v(" "),
+              _c("strong", [_vm._v(" Navbar ")]),
+              _vm._v(" "),
+              _c("small", [_vm._v("input group")])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "CCardBody",
+            [
+              _c(
+                "CNavbar",
+                { attrs: { light: "", color: "light" } },
+                [
+                  _c(
+                    "CForm",
+                    { attrs: { inline: "" } },
+                    [
+                      _c("CInput", {
+                        staticClass: "mr-sm-2",
+                        attrs: { placeholder: "Username" }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ })
+
+}]);

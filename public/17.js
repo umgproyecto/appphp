@@ -1,1 +1,534 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[17],{491:function(e,t,s){"use strict";s.r(t);var r=s(2),a=s.n(r),n=s(53);function i(e,t){var s=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),s.push.apply(s,r)}return s}function o(e){for(var t=1;t<arguments.length;t++){var s=null!=arguments[t]?arguments[t]:{};t%2?i(Object(s),!0).forEach((function(t){u(e,t,s[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(s)):i(Object(s)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(s,t))}))}return e}function u(e,t,s){return t in e?Object.defineProperty(e,t,{value:s,enumerable:!0,configurable:!0,writable:!0}):e[t]=s,e}var l=[{username:"Samppa Nori",registered:"2012/01/01",role:"Member",status:"Active"},{username:"Estavan Lykos",registered:"2012/02/01",role:"Staff",status:"Banned"},{username:"Chetan Mohamed",registered:"2012/02/01",role:"Admin",status:"Inactive"},{username:"Derick Maximinus",registered:"2012/03/01",role:"Member",status:"Pending"},{username:"Friderik Dávid",registered:"2012/01/21",role:"Staff",status:"Active"},{username:"Yiorgos Avraamu",registered:"2012/01/01",role:"Member",status:"Active"},{username:"Avram Tarasios",registered:"2012/02/01",role:"Staff",status:"Banned",_classes:"table-success"},{username:"Quintin Ed",registered:"2012/02/01",role:"Admin",status:"Inactive"},{username:"Enéas Kwadwo",registered:"2012/03/01",role:"Member",status:"Pending"},{username:"Agapetus Tadeáš",registered:"2012/01/21",role:"Staff",status:"Active"},{username:"Carwyn Fachtna",registered:"2012/01/01",role:"Member",status:"Active",_classes:"table-info"},{username:"Nehemiah Tatius",registered:"2012/02/01",role:"Staff",status:"Banned"},{username:"Ebbe Gemariah",registered:"2012/02/01",role:"Admin",status:"Inactive"},{username:"Eustorgios Amulius",registered:"2012/03/01",role:"Member",status:"Pending"},{username:"Leopold Gáspár",registered:"2012/01/21",role:"Staff",status:"Active"},{username:"Pompeius René",registered:"2012/01/01",role:"Member",status:"Active"},{username:"Paĉjo Jadon",registered:"2012/02/01",role:"Staff",status:"Banned"},{username:"Micheal Mercurius",registered:"2012/02/01",role:"Admin",status:"Inactive"},{username:"Ganesha Dubhghall",registered:"2012/03/01",role:"Member",status:"Pending"},{username:"Hiroto Šimun",registered:"2012/01/21",role:"Staff",status:"Active"},{username:"Vishnu Serghei",registered:"2012/01/01",role:"Member",status:"Active"},{username:"Zbyněk Phoibos",registered:"2012/02/01",role:"Staff",status:"Banned"},{username:"Einar Randall",registered:"2012/02/01",role:"Admin",status:"Inactive",_classes:"table-danger"},{username:"Félix Troels",registered:"2012/03/21",role:"Staff",status:"Active"},{username:"Aulus Agmundr",registered:"2012/01/01",role:"Member",status:"Pending"}],d=[{key:"username",_style:"min-width:200px"},"registered",{key:"role",_style:"min-width:100px;"},{key:"status",_style:"min-width:100px;"},{key:"show_details",label:"",_style:"width:1%",sorter:!1,filter:!1}],c={name:"CreateSale",props:{caption:{type:String,default:"User id"}},data:function(){return{items:l.map((function(e,t){return o(o({},e),{},{id:t})})),fields:d,details:[],collapseDuration:0,note:{title:"",content:"",applies_to_date:"",status_id:null,note_type:""},statuses:[],message:"",dismissSecs:3,dismissCountDown:0,showDismissibleAlert:!1}},methods:{getBadge:function(e){switch(e){case"Active":return"success";case"Inactive":return"secondary";case"Pending":return"warning";case"Banned":return"danger"}},toggleDetails:function(e){var t=this;this.$set(this.items[e.id],"_toggled",!e._toggled),this.collapseDuration=300,this.$nextTick((function(){t.collapseDuration=0}))},goBack:function(){this.$router.go(-1)},store:function(){var e=this;a.a.post("/api/notes?token="+localStorage.getItem("api_token"),e.note).then((function(t){e.note={title:"",content:"",applies_to_date:"",status_id:null,note_type:""},e.message="Successfully created note.",e.showAlert()})).catch((function(t){if("The given data was invalid."===t.response.data.message){for(var s in e.message="",t.response.data.errors)t.response.data.errors.hasOwnProperty(s)&&(e.message+=t.response.data.errors[s][0]+"  ");e.showAlert()}else console.log(t),e.$router.push({path:"login"})}))},countDownChanged:function(e){this.dismissCountDown=e},showAlert:function(){this.dismissCountDown=this.dismissSecs},shuffleArray:function(e){for(var t=e.length-1;t>0;t--){var s=Math.floor(Math.random()*(t+1)),r=e[t];e[t]=e[s],e[s]=r}return e},getShuffledUsersData:function(){return this.shuffleArray(n.a.slice(0))}},mounted:function(){var e=this;a.a.get("/api/notes/create?token="+localStorage.getItem("api_token")).then((function(t){e.statuses=t.data})).catch((function(t){console.log(t),e.$router.push({path:"login"})}))}},m=s(0),g=Object(m.a)(c,(function(){var e=this,t=e.$createElement,s=e._self._c||t;return s("CRow",[s("CCol",{attrs:{sm:"12"}},[s("CCard",[s("CCardHeader",[s("CIcon",{attrs:{name:"cil-justify-center"}}),e._v(" "),s("strong",[e._v("Generar nueva venta")]),e._v(" "),s("div",{staticClass:"card-header-actions"},[s("a",{staticClass:"card-header-action",attrs:{href:"#",rel:"noreferrer noopener",target:"_blank"}},[s("small",{staticClass:"text-muted"},[e._v("docs")])])])],1),e._v(" "),s("CCardBody",[s("CAlert",{attrs:{closeButton:"",show:e.dismissCountDown,color:"warning",fade:""},on:{"update:show":function(t){e.dismissCountDown=t}}},[e._v("\n                    ("+e._s(e.dismissCountDown)+") "+e._s(e.message)+"\n                ")]),e._v(" "),s("CRow",[s("CCol",{attrs:{sm:"6"}},[s("CCard",[s("CCardBody")],1)],1),e._v(" "),s("CCol",{attrs:{sm:"6"}},[s("CCard",[s("CCardBody")],1)],1)],1),e._v(" "),[s("CCardBody",[s("CDataTable",{attrs:{items:e.items,fields:e.fields,"column-filter":"","table-filter":"","items-per-page-select":"","items-per-page":5,hover:"",sorter:"",pagination:""},scopedSlots:e._u([{key:"status",fn:function(t){var r=t.item;return[s("td",[s("CBadge",{attrs:{color:e.getBadge(r.status)}},[e._v("\n                                        "+e._s(r.status)+"\n                                    ")])],1)]}},{key:"show_details",fn:function(t){var r=t.item,a=t.index;return[s("td",{staticClass:"py-2"},[s("CButton",{attrs:{color:"primary",variant:"outline",square:"",size:"sm"},on:{click:function(t){return e.toggleDetails(r,a)}}},[e._v("\n                                        "+e._s(Boolean(r._toggled)?"Hide":"Show")+"\n                                    ")])],1)]}},{key:"details",fn:function(t){var r=t.item;return[s("CCollapse",{attrs:{show:Boolean(r._toggled),duration:e.collapseDuration}},[s("CCardBody",[s("CMedia",{attrs:{"aside-image-props":{height:102}}},[s("h4",[e._v("\n                                                "+e._s(r.username)+"\n                                            ")]),e._v(" "),s("p",{staticClass:"text-muted"},[e._v("User since: "+e._s(r.registered))]),e._v(" "),s("CButton",{attrs:{size:"sm",color:"info"}},[e._v("\n                                                User Settings\n                                            ")]),e._v(" "),s("CButton",{staticClass:"ml-1",attrs:{size:"sm",color:"danger"}},[e._v("\n                                                Delete\n                                            ")])],1)],1)],1)]}}])})],1)]],2),e._v(" "),s("CCardFooter",{attrs:{align:"right"}},[s("CButton",{attrs:{variant:"outline",color:"success"},on:{click:function(t){return e.store()}}},[e._v("Generar")]),e._v(" "),s("CButton",{attrs:{variant:"outline",color:"danger"},on:{click:e.goBack}},[e._v("Cancelar")])],1)],1)],1)],1)}),[],!1,null,null,null);t.default=g.exports},53:function(e,t,s){"use strict";t.a=[{username:"Samppa Nori",registered:"2012/01/01",role:"Member",status:"Active"},{username:"Estavan Lykos",registered:"2012/02/01",role:"Staff",status:"Banned"},{username:"Chetan Mohamed",registered:"2012/02/01",role:"Admin",status:"Inactive"},{username:"Derick Maximinus",registered:"2012/03/01",role:"Member",status:"Pending"},{username:"Friderik Dávid",registered:"2012/01/21",role:"Staff",status:"Active"},{username:"Yiorgos Avraamu",registered:"2012/01/01",role:"Member",status:"Active"},{username:"Avram Tarasios",registered:"2012/02/01",role:"Staff",status:"Banned",_classes:"table-success"},{username:"Quintin Ed",registered:"2012/02/01",role:"Admin",status:"Inactive"},{username:"Enéas Kwadwo",registered:"2012/03/01",role:"Member",status:"Pending"},{username:"Agapetus Tadeáš",registered:"2012/01/21",role:"Staff",status:"Active"},{username:"Carwyn Fachtna",registered:"2012/01/01",role:"Member",status:"Active",_classes:"table-success"},{username:"Nehemiah Tatius",registered:"2012/02/01",role:"Staff",status:"Banned"},{username:"Ebbe Gemariah",registered:"2012/02/01",role:"Admin",status:"Inactive"},{username:"Eustorgios Amulius",registered:"2012/03/01",role:"Member",status:"Pending"},{username:"Leopold Gáspár",registered:"2012/01/21",role:"Staff",status:"Active"},{username:"Pompeius René",registered:"2012/01/01",role:"Member",status:"Active"},{username:"Paĉjo Jadon",registered:"2012/02/01",role:"Staff",status:"Banned"},{username:"Micheal Mercurius",registered:"2012/02/01",role:"Admin",status:"Inactive"},{username:"Ganesha Dubhghall",registered:"2012/03/01",role:"Member",status:"Pending"},{username:"Hiroto Šimun",registered:"2012/01/21",role:"Staff",status:"Active"},{username:"Vishnu Serghei",registered:"2012/01/01",role:"Member",status:"Active"},{username:"Zbyněk Phoibos",registered:"2012/02/01",role:"Staff",status:"Banned"},{username:"Einar Randall",registered:"2012/02/01",role:"Admin",status:"Inactive",_classes:"table-danger"},{username:"Félix Troels",registered:"2012/03/21",role:"Staff",status:"Active"},{username:"Aulus Agmundr",registered:"2012/01/01",role:"Member",status:"Pending"}]}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[17],{
+
+/***/ "../view/src/views/email/Emails.vue":
+/*!******************************************!*\
+  !*** ../view/src/views/email/Emails.vue ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Emails_vue_vue_type_template_id_1f6804e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Emails.vue?vue&type=template&id=1f6804e2&scoped=true& */ "../view/src/views/email/Emails.vue?vue&type=template&id=1f6804e2&scoped=true&");
+/* harmony import */ var _Emails_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Emails.vue?vue&type=script&lang=js& */ "../view/src/views/email/Emails.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _Emails_vue_vue_type_style_index_0_id_1f6804e2_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Emails.vue?vue&type=style&index=0&id=1f6804e2&scoped=true&lang=css& */ "../view/src/views/email/Emails.vue?vue&type=style&index=0&id=1f6804e2&scoped=true&lang=css&");
+/* harmony import */ var _laravel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../laravel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_laravel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _Emails_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Emails_vue_vue_type_template_id_1f6804e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Emails_vue_vue_type_template_id_1f6804e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "1f6804e2",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "view/src/views/email/Emails.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "../view/src/views/email/Emails.vue?vue&type=script&lang=js&":
+/*!*******************************************************************!*\
+  !*** ../view/src/views/email/Emails.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _laravel_node_modules_babel_loader_lib_index_js_ref_4_0_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Emails_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../laravel/node_modules/babel-loader/lib??ref--4-0!../../../../laravel/node_modules/vue-loader/lib??vue-loader-options!./Emails.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/email/Emails.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_laravel_node_modules_babel_loader_lib_index_js_ref_4_0_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Emails_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "../view/src/views/email/Emails.vue?vue&type=style&index=0&id=1f6804e2&scoped=true&lang=css&":
+/*!***************************************************************************************************!*\
+  !*** ../view/src/views/email/Emails.vue?vue&type=style&index=0&id=1f6804e2&scoped=true&lang=css& ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _laravel_node_modules_style_loader_index_js_laravel_node_modules_css_loader_index_js_ref_6_1_laravel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_laravel_node_modules_postcss_loader_src_index_js_ref_6_2_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Emails_vue_vue_type_style_index_0_id_1f6804e2_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../laravel/node_modules/style-loader!../../../../laravel/node_modules/css-loader??ref--6-1!../../../../laravel/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../laravel/node_modules/postcss-loader/src??ref--6-2!../../../../laravel/node_modules/vue-loader/lib??vue-loader-options!./Emails.vue?vue&type=style&index=0&id=1f6804e2&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/email/Emails.vue?vue&type=style&index=0&id=1f6804e2&scoped=true&lang=css&");
+/* harmony import */ var _laravel_node_modules_style_loader_index_js_laravel_node_modules_css_loader_index_js_ref_6_1_laravel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_laravel_node_modules_postcss_loader_src_index_js_ref_6_2_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Emails_vue_vue_type_style_index_0_id_1f6804e2_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_laravel_node_modules_style_loader_index_js_laravel_node_modules_css_loader_index_js_ref_6_1_laravel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_laravel_node_modules_postcss_loader_src_index_js_ref_6_2_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Emails_vue_vue_type_style_index_0_id_1f6804e2_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _laravel_node_modules_style_loader_index_js_laravel_node_modules_css_loader_index_js_ref_6_1_laravel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_laravel_node_modules_postcss_loader_src_index_js_ref_6_2_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Emails_vue_vue_type_style_index_0_id_1f6804e2_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _laravel_node_modules_style_loader_index_js_laravel_node_modules_css_loader_index_js_ref_6_1_laravel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_laravel_node_modules_postcss_loader_src_index_js_ref_6_2_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Emails_vue_vue_type_style_index_0_id_1f6804e2_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_laravel_node_modules_style_loader_index_js_laravel_node_modules_css_loader_index_js_ref_6_1_laravel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_laravel_node_modules_postcss_loader_src_index_js_ref_6_2_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Emails_vue_vue_type_style_index_0_id_1f6804e2_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "../view/src/views/email/Emails.vue?vue&type=template&id=1f6804e2&scoped=true&":
+/*!*************************************************************************************!*\
+  !*** ../view/src/views/email/Emails.vue?vue&type=template&id=1f6804e2&scoped=true& ***!
+  \*************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Emails_vue_vue_type_template_id_1f6804e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../laravel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../laravel/node_modules/vue-loader/lib??vue-loader-options!./Emails.vue?vue&type=template&id=1f6804e2&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/email/Emails.vue?vue&type=template&id=1f6804e2&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Emails_vue_vue_type_template_id_1f6804e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Emails_vue_vue_type_template_id_1f6804e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/email/Emails.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../view/src/views/email/Emails.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "../view/node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'Emails',
+  data: function data() {
+    return {
+      items: [],
+      fields: ['name', 'subject', 'send', 'show', 'edit', 'delete'],
+      currentPage: 1,
+      perPage: 5,
+      totalRows: 0,
+      message: '',
+      showMessage: false,
+      dismissSecs: 7,
+      dismissCountDown: 0,
+      showDismissibleAlert: false
+    };
+  },
+  computed: {},
+  methods: {
+    getRowCount: function getRowCount(items) {
+      return items.length;
+    },
+    noteLink: function noteLink(id) {
+      return "email/".concat(id.toString());
+    },
+    editLink: function editLink(id) {
+      return "email/".concat(id.toString(), "/edit");
+    },
+    showEmail: function showEmail(id) {
+      var noteLink = this.noteLink(id);
+      this.$router.push({
+        path: noteLink
+      });
+    },
+    editEmail: function editEmail(id) {
+      var editLink = this.editLink(id);
+      this.$router.push({
+        path: editLink
+      });
+    },
+    sendEmail: function sendEmail(id) {
+      this.$router.push({
+        path: "email/".concat(id.toString(), "/sendEmail")
+      });
+    },
+    deleteEmail: function deleteEmail(id) {
+      var self = this;
+      var noteId = id;
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/api/mail/' + id + '?token=' + localStorage.getItem("api_token"), {
+        _method: 'DELETE'
+      }).then(function (response) {
+        self.message = 'Successfully deleted Email Template.';
+        self.showAlert();
+        self.getTemplates();
+      })["catch"](function (error) {
+        console.log(error);
+        self.$router.push({
+          path: '/login'
+        });
+      });
+    },
+    createTemplate: function createTemplate() {
+      this.$router.push({
+        path: 'email/create'
+      });
+    },
+    countDownChanged: function countDownChanged(dismissCountDown) {
+      this.dismissCountDown = dismissCountDown;
+    },
+    showAlert: function showAlert() {
+      this.dismissCountDown = this.dismissSecs;
+    },
+    getTemplates: function getTemplates() {
+      var self = this;
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/mail?token=' + localStorage.getItem("api_token")).then(function (response) {
+        self.items = response.data;
+      })["catch"](function (error) {
+        console.log(error);
+        self.$router.push({
+          path: '/login'
+        });
+      });
+    }
+  },
+  mounted: function mounted() {
+    this.getTemplates();
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/email/Emails.vue?vue&type=style&index=0&id=1f6804e2&scoped=true&lang=css&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!../view/src/views/email/Emails.vue?vue&type=style&index=0&id=1f6804e2&scoped=true&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../laravel/node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.card-body[data-v-1f6804e2] table > tbody > tr > td {\n  cursor: pointer;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/email/Emails.vue?vue&type=style&index=0&id=1f6804e2&scoped=true&lang=css&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!../view/src/views/email/Emails.vue?vue&type=style&index=0&id=1f6804e2&scoped=true&lang=css& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../laravel/node_modules/css-loader??ref--6-1!../../../../laravel/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../laravel/node_modules/postcss-loader/src??ref--6-2!../../../../laravel/node_modules/vue-loader/lib??vue-loader-options!./Emails.vue?vue&type=style&index=0&id=1f6804e2&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/email/Emails.vue?vue&type=style&index=0&id=1f6804e2&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../laravel/node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/email/Emails.vue?vue&type=template&id=1f6804e2&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../view/src/views/email/Emails.vue?vue&type=template&id=1f6804e2&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "CRow",
+    [
+      _c(
+        "CCol",
+        { attrs: { col: "12", xl: "12" } },
+        [
+          _c(
+            "transition",
+            { attrs: { name: "slide" } },
+            [
+              _c(
+                "CCard",
+                [
+                  _c(
+                    "CCardBody",
+                    [
+                      _c("h4", [_vm._v("Email Templates")]),
+                      _vm._v(" "),
+                      _c(
+                        "CButton",
+                        {
+                          staticClass: "m-3",
+                          attrs: { color: "primary" },
+                          on: {
+                            click: function($event) {
+                              return _vm.createTemplate()
+                            }
+                          }
+                        },
+                        [_vm._v("Create Template")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "CAlert",
+                        {
+                          attrs: {
+                            show: _vm.dismissCountDown,
+                            color: "primary",
+                            fade: ""
+                          },
+                          on: {
+                            "update:show": function($event) {
+                              _vm.dismissCountDown = $event
+                            }
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n            (" +
+                              _vm._s(_vm.dismissCountDown) +
+                              ") " +
+                              _vm._s(_vm.message) +
+                              "\n          "
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("CDataTable", {
+                        attrs: {
+                          hover: "",
+                          items: _vm.items,
+                          fields: _vm.fields,
+                          "items-per-page": 10,
+                          pagination: ""
+                        },
+                        scopedSlots: _vm._u([
+                          {
+                            key: "name",
+                            fn: function(ref) {
+                              var item = ref.item
+                              return [
+                                _c("td", [
+                                  _c("strong", [_vm._v(_vm._s(item.name))])
+                                ])
+                              ]
+                            }
+                          },
+                          {
+                            key: "subject",
+                            fn: function(ref) {
+                              var item = ref.item
+                              return [
+                                _c("td", [
+                                  _c("strong", [_vm._v(_vm._s(item.subject))])
+                                ])
+                              ]
+                            }
+                          },
+                          {
+                            key: "send",
+                            fn: function(ref) {
+                              var item = ref.item
+                              return [
+                                _c(
+                                  "td",
+                                  [
+                                    _c(
+                                      "CButton",
+                                      {
+                                        attrs: { color: "warning" },
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.sendEmail(item.id)
+                                          }
+                                        }
+                                      },
+                                      [_vm._v("Send")]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ]
+                            }
+                          },
+                          {
+                            key: "show",
+                            fn: function(ref) {
+                              var item = ref.item
+                              return [
+                                _c(
+                                  "td",
+                                  [
+                                    _c(
+                                      "CButton",
+                                      {
+                                        attrs: { color: "primary" },
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.showEmail(item.id)
+                                          }
+                                        }
+                                      },
+                                      [_vm._v("Show")]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ]
+                            }
+                          },
+                          {
+                            key: "edit",
+                            fn: function(ref) {
+                              var item = ref.item
+                              return [
+                                _c(
+                                  "td",
+                                  [
+                                    _c(
+                                      "CButton",
+                                      {
+                                        attrs: { color: "primary" },
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.editEmail(item.id)
+                                          }
+                                        }
+                                      },
+                                      [_vm._v("Edit")]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ]
+                            }
+                          },
+                          {
+                            key: "delete",
+                            fn: function(ref) {
+                              var item = ref.item
+                              return [
+                                _c(
+                                  "td",
+                                  [
+                                    _c(
+                                      "CButton",
+                                      {
+                                        attrs: { color: "danger" },
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.deleteEmail(item.id)
+                                          }
+                                        }
+                                      },
+                                      [_vm._v("Delete")]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ]
+                            }
+                          }
+                        ])
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ })
+
+}]);

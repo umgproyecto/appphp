@@ -1,1 +1,952 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[22],{551:function(t,e,o){"use strict";o.r(e);var a={name:"Forms",data:function(){return{selected:[],show:!0,horizontal:{label:"col-3",input:"col-9"},options:["Option 1","Option 2","Option 3"],selectOptions:["Option 1","Option 2","Option 3",{value:["some value","another value"],label:"Selected option"}],selectedOption:["some value","another value"],formCollapsed:!0,checkboxNames:["Checkboxes","Inline Checkboxes","Checkboxes - custom","Inline Checkboxes - custom"],radioNames:["Radios","Inline Radios","Radios - custom","Inline Radios - custom"]}},methods:{validator:function(t){return!!t&&t.length>=4}}},r=o(0),s=Object(r.a)(a,(function(){var t=this,e=t.$createElement,o=t._self._c||e;return o("div",[o("CRow",[o("CCol",{attrs:{sm:"6"}},[o("CCard",[o("CCardHeader",[o("strong",[t._v("Credit Card ")]),t._v(" "),o("small",[t._v("Form")]),t._v(" "),o("div",{staticClass:"card-header-actions"},[o("a",{staticClass:"card-header-action",attrs:{href:"https://coreui.io/vue/docs/components/form-components",rel:"noreferrer noopener",target:"_blank"}},[o("small",{staticClass:"text-muted"},[t._v("docs")])])])]),t._v(" "),o("CCardBody",[o("CRow",[o("CCol",{attrs:{sm:"12"}},[o("CInput",{attrs:{label:"Name",placeholder:"Enter your name"}})],1)],1),t._v(" "),o("CRow",[o("CCol",{attrs:{sm:"12"}},[o("CInput",{attrs:{label:"Credit Card Number",placeholder:"0000 0000 0000 0000"}})],1)],1),t._v(" "),o("CRow",[o("CCol",{attrs:{sm:"4"}},[o("CSelect",{attrs:{label:"Month",options:[1,2,3,4,5,6,7,8,9,10,11,12]}})],1),t._v(" "),o("CCol",{attrs:{sm:"4"}},[o("CSelect",{attrs:{label:"Year",options:[2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025]}})],1),t._v(" "),o("CCol",{attrs:{sm:"4"}},[o("CInput",{attrs:{label:"CVV/CVC",placeholder:"123"}})],1)],1)],1)],1)],1),t._v(" "),o("CCol",{attrs:{sm:"6"}},[o("CCard",[o("CCardHeader",[o("strong",[t._v("Company ")]),o("small",[t._v("Form")])]),t._v(" "),o("CCardBody",[o("CInput",{attrs:{label:"Company",placeholder:"Enter your company name"}}),t._v(" "),o("CInput",{attrs:{label:"VAT",placeholder:"PL1234567890"}}),t._v(" "),o("CInput",{attrs:{label:"Street",placeholder:"Enter street name"}}),t._v(" "),o("CRow",[o("CCol",{attrs:{sm:"8"}},[o("CInput",{attrs:{label:"City",placeholder:"Enter your city"}})],1),t._v(" "),o("CCol",{attrs:{sm:"4"}},[o("CInput",{attrs:{label:"Postal code",placeholder:"Postal code"}})],1)],1),t._v(" "),o("CInput",{attrs:{label:"Country",placeholder:"Country name"}})],1)],1)],1)],1),t._v(" "),o("CRow",[o("CCol",{attrs:{md:"6"}},[o("CCard",[o("CCardHeader",[o("strong",[t._v("Basic Form")]),t._v(" Elements\n        ")]),t._v(" "),o("CCardBody",[o("CForm",[o("CInput",{attrs:{description:"Let us know your full name.",label:"Enter your name",horizontal:"",autocomplete:"name"}}),t._v(" "),o("CInput",{attrs:{label:"Static",value:"Username",horizontal:"",plaintext:""}}),t._v(" "),o("CInput",{attrs:{label:"Text input",description:"This is a help text",placeholder:"Text",horizontal:""}}),t._v(" "),o("CInput",{attrs:{label:"Date",type:"date",horizontal:""}}),t._v(" "),o("CInput",{attrs:{label:"Email input",description:"Please enter your email",placeholder:"Enter your email",type:"email",horizontal:"",autocomplete:"email"}}),t._v(" "),o("CInput",{attrs:{label:"Password Input",description:"Please enter a complex password",placeholder:"Enter your password",type:"password",horizontal:"",autocomplete:"current-password"}}),t._v(" "),o("CInput",{attrs:{label:"Disabled Input",placeholder:"Disabled",horizontal:"",disabled:""}}),t._v(" "),o("CTextarea",{attrs:{label:"Textarea",placeholder:"Content...",horizontal:"",rows:"9"}}),t._v(" "),o("CSelect",{attrs:{label:"Select",horizontal:"",options:t.options,placeholder:"Please select"}}),t._v(" "),o("CSelect",{attrs:{label:"Large select",size:"lg",horizontal:"",value:t.selectedOption,options:t.selectOptions,placeholder:"Please select"},on:{"update:value":function(e){t.selectedOption=e}}}),t._v(" "),o("CSelect",{attrs:{label:"Small select",size:"sm",horizontal:"",options:t.options,placeholder:"Please select"}}),t._v(" "),o("CSelect",{attrs:{label:"Select",horizontal:"",options:t.options,placeholder:"Please select",disabled:""}}),t._v(" "),t._l(t.checkboxNames,(function(e,a){return[o("div",{key:e,staticClass:"form-group form-row"},[o("CCol",{staticClass:"col-form-label",attrs:{tag:"label",sm:"3"}},[t._v("\n                  "+t._s(e)+"\n                ")]),t._v(" "),o("CCol",{class:a%2==1?"form-inline":"",attrs:{sm:"9"}},t._l(t.options,(function(t,e){return o("CInputCheckbox",{key:a+t,attrs:{label:t,value:t,custom:a>1,name:"Option 1"+a,checked:e===a,inline:a%2==1}})})),1)],1)]})),t._v(" "),t._l(t.radioNames,(function(e,a){return[o("div",{key:e,staticClass:"form-row form-group"},[o("CCol",{attrs:{sm:"3"}},[t._v("\n                  "+t._s(e)+"\n                ")]),t._v(" "),o("CCol",{class:a%2==1?"form-inline":"",attrs:{sm:"9"}},t._l(t.options,(function(t,e){return o("CInputRadio",{key:a+t,attrs:{label:t,type:"radio",value:t,custom:a>1,name:"Option 1"+a,checked:e===a,inline:a%2==1}})})),1)],1)]})),t._v(" "),o("CInputFile",{attrs:{label:"File input",horizontal:""}}),t._v(" "),o("CInputFile",{attrs:{label:"Multiple file input",horizontal:"",multiple:""}}),t._v(" "),o("CInputFile",{attrs:{label:"File custom input",horizontal:"",custom:""}}),t._v(" "),o("CInputFile",{attrs:{label:"Multiple file custom input",horizontal:"",multiple:"",custom:""}})],2)],1),t._v(" "),o("CCardFooter",[o("CButton",{attrs:{type:"submit",size:"sm",color:"primary"}},[o("CIcon",{attrs:{name:"cil-check-circle"}}),t._v(" Submit")],1),t._v(" "),o("CButton",{attrs:{type:"reset",size:"sm",color:"danger"}},[o("CIcon",{attrs:{name:"cil-ban"}}),t._v(" Reset")],1)],1)],1),t._v(" "),o("CCard",[o("CCardHeader",[o("strong",[t._v("Inline")]),t._v(" Form\n        ")]),t._v(" "),o("CCardBody",[o("CForm",{attrs:{inline:""}},[o("CInput",{staticClass:"mr-2",attrs:{placeholder:"Jane Doe"},scopedSlots:t._u([{key:"label",fn:function(){return[o("small",[t._v("Name: ")])]},proxy:!0}])}),t._v(" "),o("CInput",{attrs:{placeholder:"jane.doe@example.com",autocomplete:"email"},scopedSlots:t._u([{key:"label",fn:function(){return[o("small",[t._v("Email: ")])]},proxy:!0}])})],1)],1),t._v(" "),o("CCardFooter",[o("CButton",{attrs:{type:"submit",size:"sm",color:"primary"}},[o("CIcon",{attrs:{name:"cil-check-circle"}}),t._v(" Submit")],1),t._v(" "),o("CButton",{attrs:{type:"reset",size:"sm",color:"danger"}},[o("CIcon",{attrs:{name:"cil-ban"}}),t._v(" Reset")],1)],1)],1)],1),t._v(" "),o("CCol",{attrs:{md:"6"}},[o("CCard",[o("CCardHeader",[o("strong",[t._v("Horizontal")]),t._v(" Form\n        ")]),t._v(" "),o("CCardBody",[o("CForm",[o("CInput",{attrs:{type:"email",description:"Please enter your email.",autocomplete:"email",label:"Email",horizontal:"",placeholder:"Enter Email..."}}),t._v(" "),o("CInput",{attrs:{type:"password",description:"Please enter your password.",autocomplete:"current-password",label:"Password",horizontal:"",placeholder:"Enter Password..."}})],1)],1),t._v(" "),o("CCardFooter",[o("CButton",{attrs:{type:"submit",size:"sm",color:"primary"}},[o("CIcon",{attrs:{name:"cil-check-circle"}}),t._v(" Submit")],1),t._v(" "),o("CButton",{attrs:{type:"reset",size:"sm",color:"danger"}},[o("CIcon",{attrs:{name:"cil-ban"}}),t._v(" Reset")],1)],1)],1),t._v(" "),o("CCard",[o("CCardHeader",[o("strong",[t._v("Normal")]),t._v(" Form\n        ")]),t._v(" "),o("CForm",{attrs:{novalidate:""}},[o("CCardBody",[o("CInput",{attrs:{type:"email",description:"Please enter your email.",autocomplete:"email",label:"Email",placeholder:"Enter Email...",required:"","was-validated":""}}),t._v(" "),o("CInput",{attrs:{type:"password",description:"Please enter your password.",autocomplete:"current-password",label:"Password",placeholder:"Enter Password...",required:"","was-validated":""}})],1),t._v(" "),o("CCardFooter",[o("CButton",{attrs:{type:"submit",size:"sm",color:"primary"}},[o("CIcon",{attrs:{name:"cil-check-circle"}}),t._v(" Submit")],1),t._v(" "),o("CButton",{attrs:{type:"reset",size:"sm",color:"danger"}},[o("CIcon",{attrs:{name:"cil-ban"}}),t._v(" Reset")],1)],1)],1)],1),t._v(" "),o("CCard",[o("CCardHeader",[t._v("\n          Input "),o("strong",[t._v("Grid")])]),t._v(" "),o("CCardBody",[o("CRow",{staticClass:"form-group"},[o("CCol",{attrs:{sm:"3"}},[o("CInput",{staticClass:"mb-0",attrs:{placeholder:".col-sm-3"}})],1)],1),t._v(" "),o("CRow",{staticClass:"form-group"},[o("CCol",{attrs:{sm:"4"}},[o("CInput",{staticClass:"mb-0",attrs:{placeholder:".col-sm-4"}})],1)],1),t._v(" "),o("CRow",{staticClass:"form-group"},[o("CCol",{attrs:{sm:"5"}},[o("CInput",{staticClass:"mb-0",attrs:{placeholder:".col-sm-5"}})],1)],1),t._v(" "),o("CRow",{staticClass:"form-group"},[o("CCol",{attrs:{sm:"6"}},[o("CInput",{staticClass:"mb-0",attrs:{placeholder:".col-sm-6"}})],1)],1),t._v(" "),o("CRow",{staticClass:"form-group"},[o("CCol",{attrs:{sm:"7"}},[o("CInput",{staticClass:"mb-0",attrs:{placeholder:".col-sm-7"}})],1)],1),t._v(" "),o("CRow",{staticClass:"form-group"},[o("CCol",{attrs:{sm:"8"}},[o("CInput",{staticClass:"mb-0",attrs:{placeholder:".col-sm-8"}})],1)],1),t._v(" "),o("CRow",{staticClass:"form-group"},[o("CCol",{attrs:{sm:"9"}},[o("CInput",{staticClass:"mb-0",attrs:{placeholder:".col-sm-9"}})],1)],1),t._v(" "),o("CRow",{staticClass:"form-group"},[o("CCol",{attrs:{sm:"10"}},[o("CInput",{staticClass:"mb-0",attrs:{placeholder:".col-sm-10"}})],1)],1),t._v(" "),o("CRow",{staticClass:"form-group"},[o("CCol",{attrs:{sm:"11"}},[o("CInput",{staticClass:"mb-0",attrs:{placeholder:".col-sm-11"}})],1)],1),t._v(" "),o("CRow",{staticClass:"form-group"},[o("CCol",{attrs:{sm:"12"}},[o("CInput",{staticClass:"mb-0",attrs:{placeholder:".col-sm-12"}})],1)],1)],1),t._v(" "),o("CCardFooter",[o("CButton",{attrs:{type:"submit",size:"sm",color:"primary"}},[o("CIcon",{attrs:{name:"cil-user"}}),t._v(" Login")],1),t._v(" "),o("CButton",{attrs:{type:"reset",size:"sm",color:"danger"}},[o("CIcon",{attrs:{name:"cil-ban"}}),t._v(" Reset")],1)],1)],1),t._v(" "),o("CCard",[o("CCardHeader",[t._v("\n          Input "),o("strong",[t._v("Sizes")])]),t._v(" "),o("CCardBody",[o("CInput",{attrs:{label:"Small input",size:"sm",horizontal:"",placeholder:"size='sm'"}}),t._v(" "),o("CInput",{attrs:{label:"Default input",horizontal:"",placeholder:"normal"}}),t._v(" "),o("CInput",{attrs:{label:"Large input",size:"lg",horizontal:"",placeholder:"size='lg'"}})],1),t._v(" "),o("CCardFooter",[o("CButton",{attrs:{type:"submit",size:"sm",color:"primary"}},[o("CIcon",{attrs:{name:"cil-check-circle"}}),t._v(" Submit")],1),t._v(" "),o("CButton",{attrs:{type:"reset",size:"sm",color:"danger"}},[o("CIcon",{attrs:{name:"cil-ban"}}),t._v(" Reset")],1)],1)],1)],1)],1),t._v(" "),o("CRow",[o("CCol",{attrs:{sm:"12",md:"6"}},[o("CCard",[o("CCardHeader",[o("strong",[t._v("Basic Validation")]),t._v(" Form\n        ")]),t._v(" "),o("CCardBody",[o("CForm",{attrs:{validated:"",novalidate:""}},[o("CInput",{attrs:{label:"Input is valid","valid-feedback":"Input is not required."}}),t._v(" "),o("CInput",{attrs:{label:"Input is invalid",required:"","valid-feedback":"Thank you :)","invalid-feedback":"Please provide a required input."}})],1)],1)],1)],1),t._v(" "),o("CCol",{attrs:{sm:"12",md:"6"}},[o("CCard",[o("CCardHeader",[o("strong",[t._v("Custom Validation")]),t._v(" Form\n        ")]),t._v(" "),o("CCardBody",[o("CForm",[o("CInput",{attrs:{label:"Input is valid","valid-feedback":"Input is valid.","invalid-feedback":"Please provide at least 4 characters.",value:"Valid value","is-valid":t.validator}}),t._v(" "),o("CInput",{attrs:{label:"Input is invalid","valid-feedback":"Thank you :)","invalid-feedback":"Please provide at least 4 characters.","is-valid":t.validator}})],1)],1)],1)],1)],1),t._v(" "),o("CRow",[o("CCol",{attrs:{sm:"4"}},[o("CCard",[o("CCardHeader",[o("strong",[t._v("Icon/Text")]),t._v(" Groups\n        ")]),t._v(" "),o("CCardBody",[o("CInput",{attrs:{placeholder:"Username"},scopedSlots:t._u([{key:"prepend-content",fn:function(){return[o("CIcon",{attrs:{name:"cil-user"}})]},proxy:!0}])}),t._v(" "),o("CInput",{attrs:{type:"email",placeholder:"Email",autocomplete:"email"},scopedSlots:t._u([{key:"append-content",fn:function(){return[o("CIcon",{attrs:{name:"cil-envelope-open"}})]},proxy:!0}])}),t._v(" "),o("CInput",{attrs:{placeholder:"ex. $1.000.000",append:".00"},scopedSlots:t._u([{key:"prepend-content",fn:function(){return[o("CIcon",{attrs:{name:"cil-euro"}})]},proxy:!0}])})],1),t._v(" "),o("CCardFooter",[o("CButton",{attrs:{type:"submit",size:"sm",color:"success"}},[o("CIcon",{attrs:{name:"cil-check-circle"}}),t._v(" Submit")],1),t._v(" "),o("CButton",{attrs:{type:"reset",size:"sm",color:"danger"}},[o("CIcon",{attrs:{name:"cil-ban"}}),t._v(" Reset")],1)],1)],1)],1),t._v(" "),o("CCol",{attrs:{sm:"4"}},[o("CCard",[o("CCardHeader",[o("strong",[t._v("Buttons")]),t._v(" Groups\n        ")]),t._v(" "),o("CCardBody",[o("CInput",{attrs:{placeholder:"Username"},scopedSlots:t._u([{key:"prepend",fn:function(){return[o("CButton",{attrs:{color:"primary"}},[o("CIcon",{attrs:{name:"cil-magnifying-glass"}}),t._v(" Search\n              ")],1)]},proxy:!0}])}),t._v(" "),o("CInput",{attrs:{type:"email",placeholder:"Email",autocomplete:"email"},scopedSlots:t._u([{key:"append",fn:function(){return[o("CButton",{attrs:{type:"submit",color:"primary"}},[t._v("Submit")])]},proxy:!0}])}),t._v(" "),o("CInput",{attrs:{type:"email",placeholder:"Email",autocomplete:"email"},scopedSlots:t._u([{key:"prepend",fn:function(){return[o("CButton",{attrs:{color:"primary"}},[o("CIcon",{attrs:{name:"cib-facebook",height:"14"}})],1)]},proxy:!0},{key:"append",fn:function(){return[o("CButton",{attrs:{color:"primary"}},[o("CIcon",{attrs:{name:"cib-twitter",height:"14"}})],1)]},proxy:!0}])})],1),t._v(" "),o("CCardFooter",[o("CButton",{attrs:{type:"submit",size:"sm",color:"success"}},[o("CIcon",{attrs:{name:"cil-check-circle"}}),t._v(" Submit")],1),t._v(" "),o("CButton",{attrs:{type:"reset",size:"sm",color:"danger"}},[o("CIcon",{attrs:{name:"cil-ban"}}),t._v(" Reset")],1)],1)],1)],1),t._v(" "),o("CCol",{attrs:{sm:"4"}},[o("CCard",[o("CCardHeader",[o("strong",[t._v("Dropdowns")]),t._v(" Groups\n        ")]),t._v(" "),o("CCardBody",[o("CInput",{attrs:{placeholder:"Username"},scopedSlots:t._u([{key:"prepend",fn:function(){return[o("CDropdown",{attrs:{togglerText:"Action",color:"primary"}},[o("CDropdownItem",[t._v("Action")]),t._v(" "),o("CDropdownItem",[t._v("Another action")]),t._v(" "),o("CDropdownItem",[t._v("Something else here...")]),t._v(" "),o("CDropdownItem",{attrs:{disabled:""}},[t._v("Disabled action")])],1)]},proxy:!0}])}),t._v(" "),o("CInput",{attrs:{type:"email",placeholder:"Email",autocomplete:"email"},scopedSlots:t._u([{key:"append",fn:function(){return[o("CDropdown",{attrs:{togglerText:"Action",color:"primary",right:""}},[o("CDropdownItem",[t._v("Action")]),t._v(" "),o("CDropdownItem",[t._v("Another action")]),t._v(" "),o("CDropdownItem",[t._v("Something else here...")]),t._v(" "),o("CDropdownItem",{attrs:{disabled:""}},[t._v("Disabled action")])],1)]},proxy:!0}])}),t._v(" "),o("CInput",{attrs:{placeholder:"..."},scopedSlots:t._u([{key:"prepend",fn:function(){return[o("CDropdown",{attrs:{togglerText:"Split",color:"primary",split:""}},[o("CDropdownItem",{attrs:{href:"#"}},[t._v("Action")]),t._v(" "),o("CDropdownItem",{attrs:{href:"#"}},[t._v("Another action")]),t._v(" "),o("CDropdownItem",{attrs:{href:"#"}},[t._v("Something else here...")]),t._v(" "),o("CDropdownItem",{attrs:{disabled:""}},[t._v("Disabled action")])],1)]},proxy:!0},{key:"append",fn:function(){return[o("CDropdown",{attrs:{togglerText:"Action",color:"primary",right:""}},[o("CDropdownItem",[t._v("Action")]),t._v(" "),o("CDropdownItem",[t._v("Another action")]),t._v(" "),o("CDropdownItem",[t._v("Something else here...")]),t._v(" "),o("CDropdownItem",{attrs:{disabled:""}},[t._v("Disabled action")])],1)]},proxy:!0}])})],1),t._v(" "),o("CCardFooter",[o("CButton",{attrs:{type:"submit",size:"sm",color:"success"}},[o("CIcon",{attrs:{name:"cil-check-circle"}}),t._v(" Submit")],1),t._v(" "),o("CButton",{attrs:{type:"reset",size:"sm",color:"danger"}},[o("CIcon",{attrs:{name:"cil-ban"}}),t._v(" Reset")],1)],1)],1)],1)],1),t._v(" "),o("CRow",[o("CCol",{attrs:{md:"6"}},[o("CCard",[o("CCardHeader",[t._v("\n          Use the grid for big devices! "),o("small",[o("code",[t._v(".col-lg-*")]),t._v(" "),o("code",[t._v(".col-md-*")]),t._v(" "),o("code",[t._v(".col-sm-*")])])]),t._v(" "),o("CCardBody",t._l([4,5,6,7,8],(function(e,a){return o("CRow",{key:a,staticClass:"form-group"},[o("CCol",{attrs:{col:12-e}},[o("CInput",{staticClass:"mb-0",attrs:{placeholder:".col-md-"+(12-e)}})],1),t._v(" "),o("CCol",{attrs:{col:e}},[o("CInput",{staticClass:"mb-0",attrs:{placeholder:".col-md-"+e}})],1)],1)})),1),t._v(" "),o("CCardFooter",[o("CButton",{attrs:{size:"sm",color:"primary"}},[t._v("Action")]),t._v(" "),o("CButton",{attrs:{size:"sm",color:"danger"}},[t._v("Action")]),t._v(" "),o("CButton",{attrs:{size:"sm",color:"warning"}},[t._v("Action")]),t._v(" "),o("CButton",{attrs:{size:"sm",color:"info"}},[t._v("Action")]),t._v(" "),o("CButton",{attrs:{size:"sm",color:"success"}},[t._v("Action")])],1)],1)],1),t._v(" "),o("CCol",{attrs:{md:"6"}},[o("CCard",[o("CCardHeader",[t._v("\n          Input Grid for small devices! "),o("small",[o("code",[t._v(".col-*")])])]),t._v(" "),o("CCardBody",t._l([4,5,6,7,8],(function(e,a){return o("CRow",{key:a,staticClass:"form-group"},[o("CCol",{attrs:{col:e}},[o("CInput",{staticClass:"mb-0",attrs:{placeholder:".col-"+e}})],1),t._v(" "),o("CCol",{attrs:{col:12-e}},[o("CInput",{staticClass:"mb-0",attrs:{placeholder:".col-"+(12-e)}})],1)],1)})),1),t._v(" "),o("CCardFooter",[o("CButton",{attrs:{size:"sm",color:"primary"}},[t._v("Action")]),t._v(" "),o("CButton",{attrs:{size:"sm",color:"danger"}},[t._v("Action")]),t._v(" "),o("CButton",{attrs:{size:"sm",color:"warning"}},[t._v("Action")]),t._v(" "),o("CButton",{attrs:{size:"sm",color:"info"}},[t._v("Action")]),t._v(" "),o("CButton",{attrs:{size:"sm",color:"success"}},[t._v("Action")])],1)],1)],1)],1),t._v(" "),o("CRow",[o("CCol",{attrs:{sm:"4"}},[o("CCard",[o("CCardHeader",[t._v("\n          Example Form\n        ")]),t._v(" "),o("CCardBody",[o("CForm",[o("CInput",{attrs:{prepend:"Username"},scopedSlots:t._u([{key:"append-content",fn:function(){return[o("CIcon",{attrs:{name:"cil-user"}})]},proxy:!0}])}),t._v(" "),o("CInput",{attrs:{type:"email",autocomplete:"email",prepend:"Email"},scopedSlots:t._u([{key:"append-content",fn:function(){return[o("CIcon",{attrs:{name:"cil-envelope-closed"}})]},proxy:!0}])}),t._v(" "),o("CInput",{attrs:{type:"password",autocomplete:"current-password",prepend:"Password"},scopedSlots:t._u([{key:"append-content",fn:function(){return[o("CIcon",{attrs:{name:"cil-shield-alt"}})]},proxy:!0}])}),t._v(" "),o("div",{staticClass:"form-group form-actions"},[o("CButton",{attrs:{type:"submit",size:"sm",color:"primary"}},[t._v("\n                Submit\n              ")])],1)],1)],1)],1)],1),t._v(" "),o("CCol",{attrs:{sm:"4"}},[o("CCard",[o("CCardHeader",[t._v("\n          Example Form\n        ")]),t._v(" "),o("CCardBody",[o("CForm",[o("CInput",{attrs:{placeholder:"Username"},scopedSlots:t._u([{key:"append-content",fn:function(){return[o("CIcon",{attrs:{name:"cil-user"}})]},proxy:!0}])}),t._v(" "),o("CInput",{attrs:{placeholder:"Email",type:"email",autocomplete:"email"},scopedSlots:t._u([{key:"append-content",fn:function(){return[o("CIcon",{attrs:{name:"cil-envelope-closed"}})]},proxy:!0}])}),t._v(" "),o("CInput",{attrs:{placeholder:"Password",type:"password",autocomplete:"current-password"},scopedSlots:t._u([{key:"append-content",fn:function(){return[o("CIcon",{attrs:{name:"cil-shield-alt"}})]},proxy:!0}])}),t._v(" "),o("div",{staticClass:"form-group form-actions"},[o("CButton",{staticClass:"btn btn-sm btn-secondary",attrs:{type:"submit"}},[t._v("\n                Submit\n              ")])],1)],1)],1)],1)],1),t._v(" "),o("CCol",{attrs:{sm:"4"}},[o("CCard",[o("CCardHeader",[t._v("\n          Example Form\n        ")]),t._v(" "),o("CCardBody",[o("CForm",[o("CInput",{attrs:{placeholder:"Username"},scopedSlots:t._u([{key:"prepend-content",fn:function(){return[o("CIcon",{attrs:{name:"cil-user"}})]},proxy:!0}])}),t._v(" "),o("CInput",{attrs:{placeholder:"Email",type:"email",autocomplete:"email"},scopedSlots:t._u([{key:"prepend-content",fn:function(){return[o("CIcon",{attrs:{name:"cil-envelope-closed"}})]},proxy:!0}])}),t._v(" "),o("CInput",{attrs:{placeholder:"Password",type:"password",autocomplete:"current-password"},scopedSlots:t._u([{key:"prepend-content",fn:function(){return[o("CIcon",{attrs:{name:"cil-shield-alt"}})]},proxy:!0}])}),t._v(" "),o("div",{staticClass:"form-group form-actions"},[o("CButton",{attrs:{type:"submit",size:"sm",color:"success"}},[t._v("\n                Submit\n              ")])],1)],1)],1)],1)],1)],1),t._v(" "),o("CRow",[o("CCol",{attrs:{lg:"12"}},[o("transition",{attrs:{name:"fade"}},[t.show?o("CCard",[o("CCardHeader",[o("CIcon",{attrs:{name:"cil-pencil"}}),t._v(" Form Elements\n            "),o("div",{staticClass:"card-header-actions"},[o("CLink",{staticClass:"card-header-action btn-setting",attrs:{href:"#"}},[o("CIcon",{attrs:{name:"cil-settings"}})],1),t._v(" "),o("CLink",{staticClass:"card-header-action btn-minimize",on:{click:function(e){t.formCollapsed=!t.formCollapsed}}},[o("CIcon",{attrs:{name:"cil-chevron-"+(t.formCollapsed?"bottom":"top")}})],1),t._v(" "),o("CLink",{staticClass:"card-header-action btn-close",attrs:{href:"#"},on:{click:function(e){t.show=!t.show}}},[o("CIcon",{attrs:{name:"cil-x-circle"}})],1)],1)],1),t._v(" "),o("CCollapse",{attrs:{show:t.formCollapsed}},[o("CCardBody",[o("CInput",{attrs:{label:"Prepended text",description:"Here's some help text",type:"email",autocomplete:"email",prepend:"@"}}),t._v(" "),o("CInput",{attrs:{label:"Appended text",append:".00",description:"Here's some help text"}}),t._v(" "),o("CInput",{attrs:{label:"Appended and prepended text",append:".00",description:"Here's some help text",prepend:"$"}}),t._v(" "),o("CInput",{attrs:{label:"Append with button",description:"Here's some help text"},scopedSlots:t._u([{key:"append",fn:function(){return[o("CButton",{attrs:{color:"primary"}},[t._v("Go!")])]},proxy:!0}],null,!1,542345765)}),t._v(" "),o("CInput",{attrs:{label:"Two-buttons append"},scopedSlots:t._u([{key:"append",fn:function(){return[o("CButton",{attrs:{color:"primary"}},[t._v("Search")]),t._v(" "),o("CButton",{attrs:{color:"danger"}},[t._v("Options")])]},proxy:!0}],null,!1,755980186)}),t._v(" "),o("div",{staticClass:"form-actions"},[o("CButton",{attrs:{type:"submit",color:"primary"}},[t._v("Save changes")]),t._v(" "),o("CButton",{attrs:{color:"secondary"}},[t._v("Cancel")])],1)],1)],1)],1):t._e()],1)],1)],1)],1)}),[],!1,null,null,null);e.default=s.exports}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[22],{
+
+/***/ "../view/src/views/base/crm/sales/CreateSale.vue":
+/*!*******************************************************!*\
+  !*** ../view/src/views/base/crm/sales/CreateSale.vue ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CreateSale_vue_vue_type_template_id_66aeefe6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CreateSale.vue?vue&type=template&id=66aeefe6& */ "../view/src/views/base/crm/sales/CreateSale.vue?vue&type=template&id=66aeefe6&");
+/* harmony import */ var _CreateSale_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CreateSale.vue?vue&type=script&lang=js& */ "../view/src/views/base/crm/sales/CreateSale.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _laravel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../laravel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_laravel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CreateSale_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CreateSale_vue_vue_type_template_id_66aeefe6___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CreateSale_vue_vue_type_template_id_66aeefe6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "view/src/views/base/crm/sales/CreateSale.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "../view/src/views/base/crm/sales/CreateSale.vue?vue&type=script&lang=js&":
+/*!********************************************************************************!*\
+  !*** ../view/src/views/base/crm/sales/CreateSale.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _laravel_node_modules_babel_loader_lib_index_js_ref_4_0_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_CreateSale_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../laravel/node_modules/babel-loader/lib??ref--4-0!../../../../../../laravel/node_modules/vue-loader/lib??vue-loader-options!./CreateSale.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/base/crm/sales/CreateSale.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_laravel_node_modules_babel_loader_lib_index_js_ref_4_0_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_CreateSale_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "../view/src/views/base/crm/sales/CreateSale.vue?vue&type=template&id=66aeefe6&":
+/*!**************************************************************************************!*\
+  !*** ../view/src/views/base/crm/sales/CreateSale.vue?vue&type=template&id=66aeefe6& ***!
+  \**************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_CreateSale_vue_vue_type_template_id_66aeefe6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../laravel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../laravel/node_modules/vue-loader/lib??vue-loader-options!./CreateSale.vue?vue&type=template&id=66aeefe6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/base/crm/sales/CreateSale.vue?vue&type=template&id=66aeefe6&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_CreateSale_vue_vue_type_template_id_66aeefe6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_CreateSale_vue_vue_type_template_id_66aeefe6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "../view/src/views/users/UsersData.js":
+/*!********************************************!*\
+  !*** ../view/src/views/users/UsersData.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var usersData = [{
+  username: 'Samppa Nori',
+  registered: '2012/01/01',
+  role: 'Member',
+  status: 'Active'
+}, {
+  username: 'Estavan Lykos',
+  registered: '2012/02/01',
+  role: 'Staff',
+  status: 'Banned'
+}, {
+  username: 'Chetan Mohamed',
+  registered: '2012/02/01',
+  role: 'Admin',
+  status: 'Inactive'
+}, {
+  username: 'Derick Maximinus',
+  registered: '2012/03/01',
+  role: 'Member',
+  status: 'Pending'
+}, {
+  username: 'Friderik Dávid',
+  registered: '2012/01/21',
+  role: 'Staff',
+  status: 'Active'
+}, {
+  username: 'Yiorgos Avraamu',
+  registered: '2012/01/01',
+  role: 'Member',
+  status: 'Active'
+}, {
+  username: 'Avram Tarasios',
+  registered: '2012/02/01',
+  role: 'Staff',
+  status: 'Banned',
+  _classes: 'table-success'
+}, {
+  username: 'Quintin Ed',
+  registered: '2012/02/01',
+  role: 'Admin',
+  status: 'Inactive'
+}, {
+  username: 'Enéas Kwadwo',
+  registered: '2012/03/01',
+  role: 'Member',
+  status: 'Pending'
+}, {
+  username: 'Agapetus Tadeáš',
+  registered: '2012/01/21',
+  role: 'Staff',
+  status: 'Active'
+}, {
+  username: 'Carwyn Fachtna',
+  registered: '2012/01/01',
+  role: 'Member',
+  status: 'Active',
+  _classes: 'table-success'
+}, {
+  username: 'Nehemiah Tatius',
+  registered: '2012/02/01',
+  role: 'Staff',
+  status: 'Banned'
+}, {
+  username: 'Ebbe Gemariah',
+  registered: '2012/02/01',
+  role: 'Admin',
+  status: 'Inactive'
+}, {
+  username: 'Eustorgios Amulius',
+  registered: '2012/03/01',
+  role: 'Member',
+  status: 'Pending'
+}, {
+  username: 'Leopold Gáspár',
+  registered: '2012/01/21',
+  role: 'Staff',
+  status: 'Active'
+}, {
+  username: 'Pompeius René',
+  registered: '2012/01/01',
+  role: 'Member',
+  status: 'Active'
+}, {
+  username: 'Paĉjo Jadon',
+  registered: '2012/02/01',
+  role: 'Staff',
+  status: 'Banned'
+}, {
+  username: 'Micheal Mercurius',
+  registered: '2012/02/01',
+  role: 'Admin',
+  status: 'Inactive'
+}, {
+  username: 'Ganesha Dubhghall',
+  registered: '2012/03/01',
+  role: 'Member',
+  status: 'Pending'
+}, {
+  username: 'Hiroto Šimun',
+  registered: '2012/01/21',
+  role: 'Staff',
+  status: 'Active'
+}, {
+  username: 'Vishnu Serghei',
+  registered: '2012/01/01',
+  role: 'Member',
+  status: 'Active'
+}, {
+  username: 'Zbyněk Phoibos',
+  registered: '2012/02/01',
+  role: 'Staff',
+  status: 'Banned'
+}, {
+  username: 'Einar Randall',
+  registered: '2012/02/01',
+  role: 'Admin',
+  status: 'Inactive',
+  _classes: 'table-danger'
+}, {
+  username: 'Félix Troels',
+  registered: '2012/03/21',
+  role: 'Staff',
+  status: 'Active'
+}, {
+  username: 'Aulus Agmundr',
+  registered: '2012/01/01',
+  role: 'Member',
+  status: 'Pending'
+}];
+/* harmony default export */ __webpack_exports__["default"] = (usersData);
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/base/crm/sales/CreateSale.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../view/src/views/base/crm/sales/CreateSale.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "../view/node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _users_UsersData__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../users/UsersData */ "../view/src/views/users/UsersData.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+var items = [{
+  username: 'Samppa Nori',
+  registered: '2012/01/01',
+  role: 'Member',
+  status: 'Active'
+}, {
+  username: 'Estavan Lykos',
+  registered: '2012/02/01',
+  role: 'Staff',
+  status: 'Banned'
+}, {
+  username: 'Chetan Mohamed',
+  registered: '2012/02/01',
+  role: 'Admin',
+  status: 'Inactive'
+}, {
+  username: 'Derick Maximinus',
+  registered: '2012/03/01',
+  role: 'Member',
+  status: 'Pending'
+}, {
+  username: 'Friderik Dávid',
+  registered: '2012/01/21',
+  role: 'Staff',
+  status: 'Active'
+}, {
+  username: 'Yiorgos Avraamu',
+  registered: '2012/01/01',
+  role: 'Member',
+  status: 'Active'
+}, {
+  username: 'Avram Tarasios',
+  registered: '2012/02/01',
+  role: 'Staff',
+  status: 'Banned',
+  _classes: 'table-success'
+}, {
+  username: 'Quintin Ed',
+  registered: '2012/02/01',
+  role: 'Admin',
+  status: 'Inactive'
+}, {
+  username: 'Enéas Kwadwo',
+  registered: '2012/03/01',
+  role: 'Member',
+  status: 'Pending'
+}, {
+  username: 'Agapetus Tadeáš',
+  registered: '2012/01/21',
+  role: 'Staff',
+  status: 'Active'
+}, {
+  username: 'Carwyn Fachtna',
+  registered: '2012/01/01',
+  role: 'Member',
+  status: 'Active',
+  _classes: 'table-info'
+}, {
+  username: 'Nehemiah Tatius',
+  registered: '2012/02/01',
+  role: 'Staff',
+  status: 'Banned'
+}, {
+  username: 'Ebbe Gemariah',
+  registered: '2012/02/01',
+  role: 'Admin',
+  status: 'Inactive'
+}, {
+  username: 'Eustorgios Amulius',
+  registered: '2012/03/01',
+  role: 'Member',
+  status: 'Pending'
+}, {
+  username: 'Leopold Gáspár',
+  registered: '2012/01/21',
+  role: 'Staff',
+  status: 'Active'
+}, {
+  username: 'Pompeius René',
+  registered: '2012/01/01',
+  role: 'Member',
+  status: 'Active'
+}, {
+  username: 'Paĉjo Jadon',
+  registered: '2012/02/01',
+  role: 'Staff',
+  status: 'Banned'
+}, {
+  username: 'Micheal Mercurius',
+  registered: '2012/02/01',
+  role: 'Admin',
+  status: 'Inactive'
+}, {
+  username: 'Ganesha Dubhghall',
+  registered: '2012/03/01',
+  role: 'Member',
+  status: 'Pending'
+}, {
+  username: 'Hiroto Šimun',
+  registered: '2012/01/21',
+  role: 'Staff',
+  status: 'Active'
+}, {
+  username: 'Vishnu Serghei',
+  registered: '2012/01/01',
+  role: 'Member',
+  status: 'Active'
+}, {
+  username: 'Zbyněk Phoibos',
+  registered: '2012/02/01',
+  role: 'Staff',
+  status: 'Banned'
+}, {
+  username: 'Einar Randall',
+  registered: '2012/02/01',
+  role: 'Admin',
+  status: 'Inactive',
+  _classes: 'table-danger'
+}, {
+  username: 'Félix Troels',
+  registered: '2012/03/21',
+  role: 'Staff',
+  status: 'Active'
+}, {
+  username: 'Aulus Agmundr',
+  registered: '2012/01/01',
+  role: 'Member',
+  status: 'Pending'
+}];
+var fields = [{
+  key: 'username',
+  _style: 'min-width:200px'
+}, 'registered', {
+  key: 'role',
+  _style: 'min-width:100px;'
+}, {
+  key: 'status',
+  _style: 'min-width:100px;'
+}, {
+  key: 'show_details',
+  label: '',
+  _style: 'width:1%',
+  sorter: false,
+  filter: false
+}];
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'CreateSale',
+  props: {
+    caption: {
+      type: String,
+      "default": 'User id'
+    }
+  },
+  data: function data() {
+    return {
+      items: items.map(function (item, id) {
+        return _objectSpread({}, item, {
+          id: id
+        });
+      }),
+      fields: fields,
+      details: [],
+      collapseDuration: 0,
+      note: {
+        title: '',
+        content: '',
+        applies_to_date: '',
+        status_id: null,
+        note_type: ''
+      },
+      statuses: [],
+      message: '',
+      dismissSecs: 3,
+      dismissCountDown: 0,
+      showDismissibleAlert: false
+    };
+  },
+  methods: {
+    getBadge: function getBadge(status) {
+      switch (status) {
+        case 'Active':
+          return 'success';
+
+        case 'Inactive':
+          return 'secondary';
+
+        case 'Pending':
+          return 'warning';
+
+        case 'Banned':
+          return 'danger';
+
+        default:
+          'primary';
+      }
+    },
+    toggleDetails: function toggleDetails(item) {
+      var _this = this;
+
+      this.$set(this.items[item.id], '_toggled', !item._toggled);
+      this.collapseDuration = 300;
+      this.$nextTick(function () {
+        _this.collapseDuration = 0;
+      });
+    },
+    goBack: function goBack() {
+      this.$router.go(-1); // this.$router.replace({path: '/users'})
+    },
+    store: function store() {
+      var self = this;
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/api/notes?token=' + localStorage.getItem("api_token"), self.note) // eslint-disable-next-line no-unused-vars
+      .then(function (response) {
+        self.note = {
+          title: '',
+          content: '',
+          applies_to_date: '',
+          status_id: null,
+          note_type: ''
+        };
+        self.message = 'Successfully created note.';
+        self.showAlert();
+      })["catch"](function (error) {
+        if (error.response.data.message === 'The given data was invalid.') {
+          self.message = '';
+
+          for (var key in error.response.data.errors) {
+            // eslint-disable-next-line no-prototype-builtins
+            if (error.response.data.errors.hasOwnProperty(key)) {
+              self.message += error.response.data.errors[key][0] + '  ';
+            }
+          }
+
+          self.showAlert();
+        } else {
+          console.log(error);
+          self.$router.push({
+            path: 'login'
+          });
+        }
+      });
+    },
+    countDownChanged: function countDownChanged(dismissCountDown) {
+      this.dismissCountDown = dismissCountDown;
+    },
+    showAlert: function showAlert() {
+      this.dismissCountDown = this.dismissSecs;
+    },
+    shuffleArray: function shuffleArray(array) {
+      for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+      }
+
+      return array;
+    },
+    getShuffledUsersData: function getShuffledUsersData() {
+      return this.shuffleArray(_users_UsersData__WEBPACK_IMPORTED_MODULE_1__["default"].slice(0));
+    }
+  },
+  mounted: function mounted() {
+    var self = this;
+    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/notes/create?token=' + localStorage.getItem("api_token")).then(function (response) {
+      self.statuses = response.data;
+    })["catch"](function (error) {
+      console.log(error);
+      self.$router.push({
+        path: 'login'
+      });
+    });
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/base/crm/sales/CreateSale.vue?vue&type=template&id=66aeefe6&":
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../view/src/views/base/crm/sales/CreateSale.vue?vue&type=template&id=66aeefe6& ***!
+  \********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "CRow",
+    [
+      _c(
+        "CCol",
+        { attrs: { sm: "12" } },
+        [
+          _c(
+            "CCard",
+            [
+              _c(
+                "CCardHeader",
+                [
+                  _c("CIcon", { attrs: { name: "cil-justify-center" } }),
+                  _vm._v(" "),
+                  _c("strong", [_vm._v("Generar nueva venta")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-header-actions" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "card-header-action",
+                        attrs: {
+                          href: "#",
+                          rel: "noreferrer noopener",
+                          target: "_blank"
+                        }
+                      },
+                      [
+                        _c("small", { staticClass: "text-muted" }, [
+                          _vm._v("docs")
+                        ])
+                      ]
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "CCardBody",
+                [
+                  _c(
+                    "CAlert",
+                    {
+                      attrs: {
+                        closeButton: "",
+                        show: _vm.dismissCountDown,
+                        color: "warning",
+                        fade: ""
+                      },
+                      on: {
+                        "update:show": function($event) {
+                          _vm.dismissCountDown = $event
+                        }
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                    (" +
+                          _vm._s(_vm.dismissCountDown) +
+                          ") " +
+                          _vm._s(_vm.message) +
+                          "\n                "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "CRow",
+                    [
+                      _c(
+                        "CCol",
+                        { attrs: { sm: "6" } },
+                        [_c("CCard", [_c("CCardBody")], 1)],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "CCol",
+                        { attrs: { sm: "6" } },
+                        [_c("CCard", [_c("CCardBody")], 1)],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  [
+                    _c(
+                      "CCardBody",
+                      [
+                        _c("CDataTable", {
+                          attrs: {
+                            items: _vm.items,
+                            fields: _vm.fields,
+                            "column-filter": "",
+                            "table-filter": "",
+                            "items-per-page-select": "",
+                            "items-per-page": 5,
+                            hover: "",
+                            sorter: "",
+                            pagination: ""
+                          },
+                          scopedSlots: _vm._u([
+                            {
+                              key: "status",
+                              fn: function(ref) {
+                                var item = ref.item
+                                return [
+                                  _c(
+                                    "td",
+                                    [
+                                      _c(
+                                        "CBadge",
+                                        {
+                                          attrs: {
+                                            color: _vm.getBadge(item.status)
+                                          }
+                                        },
+                                        [
+                                          _vm._v(
+                                            "\n                                        " +
+                                              _vm._s(item.status) +
+                                              "\n                                    "
+                                          )
+                                        ]
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ]
+                              }
+                            },
+                            {
+                              key: "show_details",
+                              fn: function(ref) {
+                                var item = ref.item
+                                var index = ref.index
+                                return [
+                                  _c(
+                                    "td",
+                                    { staticClass: "py-2" },
+                                    [
+                                      _c(
+                                        "CButton",
+                                        {
+                                          attrs: {
+                                            color: "primary",
+                                            variant: "outline",
+                                            square: "",
+                                            size: "sm"
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.toggleDetails(
+                                                item,
+                                                index
+                                              )
+                                            }
+                                          }
+                                        },
+                                        [
+                                          _vm._v(
+                                            "\n                                        " +
+                                              _vm._s(
+                                                Boolean(item._toggled)
+                                                  ? "Hide"
+                                                  : "Show"
+                                              ) +
+                                              "\n                                    "
+                                          )
+                                        ]
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ]
+                              }
+                            },
+                            {
+                              key: "details",
+                              fn: function(ref) {
+                                var item = ref.item
+                                return [
+                                  _c(
+                                    "CCollapse",
+                                    {
+                                      attrs: {
+                                        show: Boolean(item._toggled),
+                                        duration: _vm.collapseDuration
+                                      }
+                                    },
+                                    [
+                                      _c(
+                                        "CCardBody",
+                                        [
+                                          _c(
+                                            "CMedia",
+                                            {
+                                              attrs: {
+                                                "aside-image-props": {
+                                                  height: 102
+                                                }
+                                              }
+                                            },
+                                            [
+                                              _c("h4", [
+                                                _vm._v(
+                                                  "\n                                                " +
+                                                    _vm._s(item.username) +
+                                                    "\n                                            "
+                                                )
+                                              ]),
+                                              _vm._v(" "),
+                                              _c(
+                                                "p",
+                                                { staticClass: "text-muted" },
+                                                [
+                                                  _vm._v(
+                                                    "User since: " +
+                                                      _vm._s(item.registered)
+                                                  )
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "CButton",
+                                                {
+                                                  attrs: {
+                                                    size: "sm",
+                                                    color: "info"
+                                                  }
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "\n                                                User Settings\n                                            "
+                                                  )
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "CButton",
+                                                {
+                                                  staticClass: "ml-1",
+                                                  attrs: {
+                                                    size: "sm",
+                                                    color: "danger"
+                                                  }
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "\n                                                Delete\n                                            "
+                                                  )
+                                                ]
+                                              )
+                                            ],
+                                            1
+                                          )
+                                        ],
+                                        1
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ]
+                              }
+                            }
+                          ])
+                        })
+                      ],
+                      1
+                    )
+                  ]
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "CCardFooter",
+                { attrs: { align: "right" } },
+                [
+                  _c(
+                    "CButton",
+                    {
+                      attrs: { variant: "outline", color: "success" },
+                      on: {
+                        click: function($event) {
+                          return _vm.store()
+                        }
+                      }
+                    },
+                    [_vm._v("Generar")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "CButton",
+                    {
+                      attrs: { variant: "outline", color: "danger" },
+                      on: { click: _vm.goBack }
+                    },
+                    [_vm._v("Cancelar")]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ })
+
+}]);
