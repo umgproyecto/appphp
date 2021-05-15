@@ -1,1 +1,422 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[17],{440:function(t,r,e){"use strict";e.r(r);var n=e(4),a=e.n(n);function o(t,r){return function(t){if(Array.isArray(t))return t}(t)||function(t,r){var e=t&&("undefined"!=typeof Symbol&&t[Symbol.iterator]||t["@@iterator"]);if(null==e)return;var n,a,o=[],u=!0,i=!1;try{for(e=e.call(t);!(u=(n=e.next()).done)&&(o.push(n.value),!r||o.length!==r);u=!0);}catch(t){i=!0,a=t}finally{try{u||null==e.return||e.return()}finally{if(i)throw a}}return o}(t,r)||function(t,r){if(!t)return;if("string"==typeof t)return u(t,r);var e=Object.prototype.toString.call(t).slice(8,-1);"Object"===e&&t.constructor&&(e=t.constructor.name);if("Map"===e||"Set"===e)return Array.from(t);if("Arguments"===e||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(e))return u(t,r)}(t,r)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function u(t,r){(null==r||r>t.length)&&(r=t.length);for(var e=0,n=new Array(r);e<r;e++)n[e]=t[e];return n}var i={name:"User",data:function(){return{items:[],fields:[{key:"key"},{key:"value"}]}},methods:{getUserData:function(t){var r=usersData.find((function(r,e){return e+1==t}));return(r?Object.entries(r):[["id","Not found"]]).map((function(t){var r=o(t,2);return{key:r[0],value:r[1]}}))},goBack:function(){this.$router.go(-1)}},mounted:function(){var t=this;a.a.get("/api/users/"+t.$route.params.id+"?token="+localStorage.getItem("api_token")).then((function(r){var e=Object.entries(r.data);t.items=e.map((function(t){var r=o(t,2);return{key:r[0],value:r[1]}}))})).catch((function(r){console.log(r),t.$router.push({path:"/login"})}))}},l=e(3),s=Object(l.a)(i,(function(){var t=this,r=t.$createElement,e=t._self._c||r;return e("CRow",[e("CCol",{attrs:{col:"12",lg:"6"}},[e("CCard",[e("CCardHeader",[t._v("\n        User id:  "+t._s(t.$route.params.id)+"\n      ")]),t._v(" "),e("CCardBody",[e("CDataTable",{attrs:{striped:"",small:"",fixed:"",items:t.items,fields:t.fields},scopedSlots:t._u([{key:"value",fn:function(r){return[e("strong",[t._v(t._s(r.item.value))])]}}])})],1),t._v(" "),e("CCardFooter",[e("CButton",{attrs:{color:"primary"},on:{click:t.goBack}},[t._v("Back")])],1)],1)],1)],1)}),[],!1,null,null,null);r.default=s.exports}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[17],{
+
+/***/ "../view/src/views/users/Users.vue":
+/*!*****************************************!*\
+  !*** ../view/src/views/users/Users.vue ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Users_vue_vue_type_template_id_60b30039___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Users.vue?vue&type=template&id=60b30039& */ "../view/src/views/users/Users.vue?vue&type=template&id=60b30039&");
+/* harmony import */ var _Users_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Users.vue?vue&type=script&lang=js& */ "../view/src/views/users/Users.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _laravel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../laravel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_laravel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Users_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Users_vue_vue_type_template_id_60b30039___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Users_vue_vue_type_template_id_60b30039___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "view/src/views/users/Users.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "../view/src/views/users/Users.vue?vue&type=script&lang=js&":
+/*!******************************************************************!*\
+  !*** ../view/src/views/users/Users.vue?vue&type=script&lang=js& ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _laravel_node_modules_babel_loader_lib_index_js_ref_4_0_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Users_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../laravel/node_modules/babel-loader/lib??ref--4-0!../../../../laravel/node_modules/vue-loader/lib??vue-loader-options!./Users.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/users/Users.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_laravel_node_modules_babel_loader_lib_index_js_ref_4_0_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Users_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "../view/src/views/users/Users.vue?vue&type=template&id=60b30039&":
+/*!************************************************************************!*\
+  !*** ../view/src/views/users/Users.vue?vue&type=template&id=60b30039& ***!
+  \************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Users_vue_vue_type_template_id_60b30039___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../laravel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../laravel/node_modules/vue-loader/lib??vue-loader-options!./Users.vue?vue&type=template&id=60b30039& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/users/Users.vue?vue&type=template&id=60b30039&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Users_vue_vue_type_template_id_60b30039___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _laravel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_laravel_node_modules_vue_loader_lib_index_js_vue_loader_options_Users_vue_vue_type_template_id_60b30039___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/users/Users.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../view/src/views/users/Users.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "../view/node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'Users',
+  data: function data() {
+    return {
+      items: [],
+      fields: ['id', 'name', 'registered', 'roles', 'status', 'show', 'edit', 'delete'],
+      currentPage: 1,
+      perPage: 5,
+      totalRows: 0,
+      you: null,
+      message: '',
+      showMessage: false,
+      dismissSecs: 3,
+      dismissCountDown: 0,
+      showDismissibleAlert: false
+    };
+  },
+  paginationProps: {
+    align: 'center',
+    doubleArrows: false,
+    previousButtonHtml: 'prev',
+    nextButtonHtml: 'next'
+  },
+  methods: {
+    getBadge: function getBadge(status) {
+      return status === 'Active' ? 'success' : status === 'Inactive' ? 'secondary' : status === 'Pending' ? 'warning' : status === 'Banned' ? 'danger' : 'primary';
+    },
+    userLink: function userLink(id) {
+      return "users/".concat(id.toString());
+    },
+    editLink: function editLink(id) {
+      return "users/".concat(id.toString(), "/edit");
+    },
+    showUser: function showUser(id) {
+      var userLink = this.userLink(id);
+      this.$router.push({
+        path: userLink
+      });
+    },
+    editUser: function editUser(id) {
+      var editLink = this.editLink(id);
+      this.$router.push({
+        path: editLink
+      });
+    },
+    deleteUser: function deleteUser(id) {
+      var self = this; // eslint-disable-next-line no-unused-vars
+
+      var userId = id;
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/api/users/' + id + '?token=' + localStorage.getItem("api_token"), {
+        _method: 'DELETE'
+      }) // eslint-disable-next-line no-unused-vars
+      .then(function (response) {
+        self.message = 'Successfully deleted user.';
+        self.showAlert();
+        self.getUsers();
+      })["catch"](function (error) {
+        console.log(error);
+        self.$router.push({
+          path: '/login'
+        });
+      });
+    },
+    countDownChanged: function countDownChanged(dismissCountDown) {
+      this.dismissCountDown = dismissCountDown;
+    },
+    showAlert: function showAlert() {
+      this.dismissCountDown = this.dismissSecs;
+    },
+    getUsers: function getUsers() {
+      var self = this;
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/users?token=' + localStorage.getItem("api_token")).then(function (response) {
+        self.items = response.data.users;
+        self.you = response.data.you;
+      })["catch"](function (error) {
+        console.log(error);
+        self.$router.push({
+          path: '/login'
+        });
+      });
+    }
+  },
+  mounted: function mounted() {
+    this.getUsers();
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../view/src/views/users/Users.vue?vue&type=template&id=60b30039&":
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../view/src/views/users/Users.vue?vue&type=template&id=60b30039& ***!
+  \******************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "CRow",
+    [
+      _c(
+        "CCol",
+        { attrs: { col: "12", xl: "8" } },
+        [
+          _c(
+            "transition",
+            { attrs: { name: "slide" } },
+            [
+              _c(
+                "CCard",
+                [
+                  _c("CCardHeader", [_vm._v("\n          Users\n      ")]),
+                  _vm._v(" "),
+                  _c(
+                    "CCardBody",
+                    [
+                      _c(
+                        "CAlert",
+                        {
+                          attrs: {
+                            show: _vm.dismissCountDown,
+                            color: "primary",
+                            fade: ""
+                          },
+                          on: {
+                            "update:show": function($event) {
+                              _vm.dismissCountDown = $event
+                            }
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n          (" +
+                              _vm._s(_vm.dismissCountDown) +
+                              ") " +
+                              _vm._s(_vm.message) +
+                              "\n        "
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("CDataTable", {
+                        attrs: {
+                          hover: "",
+                          striped: "",
+                          items: _vm.items,
+                          fields: _vm.fields,
+                          "items-per-page": 5,
+                          pagination: ""
+                        },
+                        scopedSlots: _vm._u([
+                          {
+                            key: "status",
+                            fn: function(ref) {
+                              var item = ref.item
+                              return [
+                                _c(
+                                  "td",
+                                  [
+                                    _c(
+                                      "CBadge",
+                                      {
+                                        attrs: {
+                                          color: _vm.getBadge(item.status)
+                                        }
+                                      },
+                                      [_vm._v(_vm._s(item.status))]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ]
+                            }
+                          },
+                          {
+                            key: "show",
+                            fn: function(ref) {
+                              var item = ref.item
+                              return [
+                                _c(
+                                  "td",
+                                  [
+                                    _c(
+                                      "CButton",
+                                      {
+                                        attrs: { color: "primary" },
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.showUser(item.id)
+                                          }
+                                        }
+                                      },
+                                      [_vm._v("Show")]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ]
+                            }
+                          },
+                          {
+                            key: "edit",
+                            fn: function(ref) {
+                              var item = ref.item
+                              return [
+                                _c(
+                                  "td",
+                                  [
+                                    _c(
+                                      "CButton",
+                                      {
+                                        attrs: { color: "primary" },
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.editUser(item.id)
+                                          }
+                                        }
+                                      },
+                                      [_vm._v("Edit")]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ]
+                            }
+                          },
+                          {
+                            key: "delete",
+                            fn: function(ref) {
+                              var item = ref.item
+                              return [
+                                _c(
+                                  "td",
+                                  [
+                                    _vm.you != item.id
+                                      ? _c(
+                                          "CButton",
+                                          {
+                                            attrs: { color: "danger" },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.deleteUser(item.id)
+                                              }
+                                            }
+                                          },
+                                          [_vm._v("Delete")]
+                                        )
+                                      : _vm._e()
+                                  ],
+                                  1
+                                )
+                              ]
+                            }
+                          }
+                        ])
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ })
+
+}]);
