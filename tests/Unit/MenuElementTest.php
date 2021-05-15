@@ -2,14 +2,12 @@
 
 namespace Tests\Unit;
 
+use App\Models\Menulist;
+use App\Models\Menurole;
+use App\Models\Menus;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Spatie\Permission\Models\Role;
 use Tests\TestCase;
-use App\Models\Menulist;
-use App\Models\Menus;
-use App\Models\Menurole;
 
 class MenuElementTest extends TestCase
 {
@@ -78,7 +76,7 @@ class MenuElementTest extends TestCase
             'type' => 'link',
             'href' => 'test3',
             'parent' => '1',
-            'icon' => 'test4', 
+            'icon' => 'test4',
         ];
         $response = $this->actingAs($user)->post('/api/menu/element/store', $postArray);
         $this->assertDatabaseHas('menu_role',[
@@ -159,7 +157,7 @@ class MenuElementTest extends TestCase
             'type' => 'link',
             'href' => 'test33',
             'parent' => '2',
-            'icon' => 'test44', 
+            'icon' => 'test44',
         ];
         $this->assertDatabaseHas('menus',[
             'slug' => 'link',
@@ -270,7 +268,7 @@ class MenuElementTest extends TestCase
             'sequence' => 12,
         ]);
     }
-  
+
     public function testMoveDown(){
         $user = factory('App\User')->states('admin')->create();
         Role::create(['name' => 'admin']);

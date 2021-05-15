@@ -20,4 +20,7 @@ class Person extends Model
     public function providers(){
         return $this->hasMany('App\Models\Provider');
     }
+    public function products(){
+        return $this->hasMany('App\Models\Product');
+    }
 }

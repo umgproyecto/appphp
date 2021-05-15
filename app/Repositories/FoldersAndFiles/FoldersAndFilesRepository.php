@@ -2,9 +2,8 @@
 namespace App\Repositories\FoldersAndFiles;
 
 
-use App\Repositories\FoldersAndFiles\FoldersAndFilesInterface as FoldersAndFilesInterface;
-use Illuminate\Support\Facades\DB;
 use App\Models\Folder;
+use App\Repositories\FoldersAndFiles\FoldersAndFilesInterface as FoldersAndFilesInterface;
 
 class FoldersAndFilesRepository implements FoldersAndFilesInterface{
 

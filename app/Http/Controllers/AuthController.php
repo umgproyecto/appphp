@@ -3,12 +3,10 @@
 namespace App\Http\Controllers;
 use App\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
-use App\Http\Controllers\Controller;
 
 class AuthController extends Controller
-{ 
+{
     /**
      * Create a new AuthController instance.
      *
@@ -18,7 +16,7 @@ class AuthController extends Controller
     {
         $this->middleware('auth:api', ['except' => ['login', 'register']]);
     }
-  
+
     /**
      * Register new user.
      *
@@ -29,21 +27,21 @@ class AuthController extends Controller
             'name'      => 'required',
             'email'     => 'required|email|unique:users',
             'password'  => 'required|min:4|confirmed',
-        ]);        
+        ]);
         if ($validate->fails()){
             return response()->json([
                 'status' => 'error',
                 'errors' => $validate->errors()
             ], 422);
-        }        
+        }
         $user = new User;
         $user->name = $request->name;
         $user->email = $request->email;
         $user->password = bcrypt($request->password);
         $user->status = 'Active';
-        $user->save();       
+        $user->save();
         return response()->json(['status' => 'success'], 200);
-    } 
+    }
 
     /**
      * Get a JWT via given credentials.
@@ -69,7 +67,6 @@ class AuthController extends Controller
     public function logout()
     {
         auth()->logout();
-
         return response()->json(['message' => 'Successfully logged out']);
     }
 

@@ -6,11 +6,11 @@
 
 namespace App\Services;
 
-use App\Models\FormField;
 use App\Models\Form;
+use App\Models\FormField;
 use Illuminate\Support\Facades\DB;
-use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
 
 class FormService{
 
@@ -51,7 +51,7 @@ class FormService{
         }
         $formField->form_id = $formId;
         $formField->column_name = $slug;
-        $formField->save();  
+        $formField->save();
     }
 
     public function updateSingleFormField($field, $request){
@@ -170,7 +170,7 @@ class FormService{
     public function createPermissions( $formId ){
         $permission = Permission::where('name', '=', 'browse bread ' . $formId)->first();
         if(empty($permission)){
-            Permission::create(['name' => 'browse bread ' . $formId]); 
+            Permission::create(['name' => 'browse bread ' . $formId]);
         }
         $permission = Permission::where('name', '=', 'read bread ' . $formId)->first();
         if(empty($permission)){
@@ -178,7 +178,7 @@ class FormService{
         }
         $permission = Permission::where('name', '=', 'edit bread ' . $formId)->first();
         if(empty($permission)){
-            Permission::create(['name' => 'edit bread ' . $formId]); 
+            Permission::create(['name' => 'edit bread ' . $formId]);
         }
         $permission = Permission::where('name', '=', 'add bread ' . $formId)->first();
         if(empty($permission)){
@@ -186,7 +186,7 @@ class FormService{
         }
         $permission = Permission::where('name', '=', 'delete bread ' . $formId)->first();
         if(empty($permission)){
-            Permission::create(['name' => 'delete bread ' . $formId]); 
+            Permission::create(['name' => 'delete bread ' . $formId]);
         }
     }
 
@@ -206,7 +206,7 @@ class FormService{
                 if(isset($request['add'])){
                     $role->givePermissionTo('add bread ' . $formId);
                 }
-                if(isset($request['delete'])){ 
+                if(isset($request['delete'])){
                     $role->givePermissionTo('delete bread ' . $formId);
                 }
             }

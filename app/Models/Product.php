@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    //
+    protected $guarded = [];
+    public function person(){
+        return $this->belongsTo('App\Models\Person');
+    }
 }

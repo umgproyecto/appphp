@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use App\Services\ResourceService;
-use App\Services\FormService;
 use App\Models\Form;
 use App\Models\FormField;
+use App\Services\FormService;
+use App\Services\ResourceService;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Spatie\Permission\Models\Role;
 
 class ResourceController extends Controller
@@ -66,7 +66,7 @@ class ResourceController extends Controller
             $resourceService = new ResourceService();
             $formService = new FormService();
             $columns = $resourceService->getColumnsForAdd( $table );
-            
+
             return response()->json( [
                 'form' => $form,
                 'columns' => $columns,

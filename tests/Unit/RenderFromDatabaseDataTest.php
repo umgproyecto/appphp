@@ -2,10 +2,8 @@
 
 namespace Tests\Unit;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Tests\TestCase;
 use App\MenuBuilder\RenderFromDatabaseData;
+use Tests\TestCase;
 
 class RenderFromDatabaseDataTest extends TestCase
 {
@@ -35,7 +33,7 @@ class RenderFromDatabaseDataTest extends TestCase
             'hasIcon' => true,
             'icon' => 'cui-speedometer',
             'iconType' => 'coreui',
-        ));        
+        ));
         $rfd = new RenderFromDatabaseData();
         $result = $rfd->render($input);
         $this->assertSame($result, $provided);
@@ -105,7 +103,7 @@ class RenderFromDatabaseDataTest extends TestCase
                 )
             ),
             'href' => '/base',
-        ));        
+        ));
         $rfd = new RenderFromDatabaseData();
         $result = $rfd->render($input);
         $this->assertSame($result, $provided);

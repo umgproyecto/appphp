@@ -2,19 +2,17 @@
 
 namespace Tests\Unit;
 
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-//use Illuminate\Foundation\Testing\WithFaker;
-use Tests\TestCase;
-use App\Services\ResourceService;
+use App\Models\Example;
 use App\Models\Folder;
+use App\Models\Form;
 use App\Models\FormField;
 use App\Models\Status;
-use App\Models\Form;
-use App\Models\Example;
-
+use App\Services\ResourceService;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Http\UploadedFile;
-use Illuminate\Support\Facades\Storage;
+use Tests\TestCase;
+
+//use Illuminate\Foundation\Testing\WithFaker;
 
 class ResourceServiceTest extends TestCase
 {
@@ -77,7 +75,7 @@ class ResourceServiceTest extends TestCase
         $folder = new Folder();
         $folder->name = 'Resource';
         $folder->resource = 1;
-        $folder->save(); 
+        $folder->save();
         $resourceService = new ResourceService();
         $file = UploadedFile::fake()->image('file.jpg');
         $request = array('column_name' => $file);
@@ -198,7 +196,7 @@ class ResourceServiceTest extends TestCase
             'status_id' => '7',
         ]);
     }
-    
+
     public function testUpdate(){
         $formId = $this->helperCreateForm('Form name');
         $exampleId = $this->helperCreateExample('test');

@@ -4,10 +4,9 @@
 
 use App\Models\Menus;
 use Faker\Generator as Faker;
-use Illuminate\Support\Str;
 
 $factory->define(Menus::class, function (Faker $faker) {
-    return [     
+    return [
         'name'          => $faker->sentence(4,true),
         'href'          => '/href',
         'icon'          => NULL,

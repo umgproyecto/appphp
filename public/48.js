@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[48],{497:function(e,n,t){"use strict";t.r(n);var a={name:"Inventories"},s=t(0),i=Object(s.a)(a,(function(){var e=this.$createElement;return(this._self._c||e)("div")}),[],!1,null,"fa1a4366",null);n.default=i.exports}}]);

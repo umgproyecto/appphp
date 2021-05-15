@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[38],{487:function(e,n,t){"use strict";t.r(n);var c={name:"Accounts-receivable"},a=t(0),s=Object(a.a)(c,(function(){var e=this.$createElement;return(this._self._c||e)("div")}),[],!1,null,"ac5f0e3a",null);n.default=s.exports}}]);

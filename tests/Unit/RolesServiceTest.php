@@ -2,14 +2,12 @@
 
 namespace Tests\Unit;
 
+use App\Models\Menurole;
+use App\Models\RoleHierarchy;
+use App\Services\RolesService;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Spatie\Permission\Models\Role;
 use Tests\TestCase;
-use App\Services\RolesService;
-use App\Models\RoleHierarchy;
-use App\Models\Menurole;
 
 class RolesServiceTest extends TestCase
 {
@@ -51,7 +49,7 @@ class RolesServiceTest extends TestCase
         $user->assignRole('admin');
         $response = $this->actingAs($user)->post('/api/roles', ['name' => 'xyzxyz']);
         $this->assertDatabaseHas('roles',['name'=> 'xyzxyz']);
-        $role = Role::where('name', '=', 'xyzxyz')->first(); 
+        $role = Role::where('name', '=', 'xyzxyz')->first();
         $this->assertDatabaseHas('role_hierarchy',['role_id' => $role->id]);
     }
 

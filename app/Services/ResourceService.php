@@ -6,10 +6,10 @@
 
 namespace App\Services;
 
-use App\Models\FormField;
-use App\Models\Form;
-use App\Models\Models;
 use App\Models\Folder;
+use App\Models\Form;
+use App\Models\FormField;
+use App\Models\Models;
 use Illuminate\Support\Facades\DB;
 
 class ResourceService{
@@ -38,7 +38,7 @@ class ResourceService{
             $mediaFolder = Folder::where('resource', '=', 1)->first();
             if(!empty($mediaFolder)){
                 $mediaFolder->addMedia($path)->usingFileName( date('YmdHis') . $oryginalName )->usingName($oryginalName)->toMediaCollection();
-                $result = DB::getPdo()->lastInsertId(); 
+                $result = DB::getPdo()->lastInsertId();
             }
         }
         return $result;
@@ -246,7 +246,7 @@ class ResourceService{
                 $table->addSelect($relation['table'] . '.' . $relation['column'] . ' AS relation_' . $relation['thisTableColumnName']);
             }
         }
-        $data = $table->where($tableName . '.id', '=', $tableId)->first();  
+        $data = $table->where($tableName . '.id', '=', $tableId)->first();
 
 
         $result = array();
@@ -257,19 +257,19 @@ class ResourceService{
                 array_push($result, array(
                     'name' => $column->name,
                     'value' => $value,
-                    'type' => $column->type 
+                    'type' => $column->type
                 ));
             }else{
                 if(!empty($column->relation_table)){
-                    $columnName = 'relation_' . $column->column_name; 
+                    $columnName = 'relation_' . $column->column_name;
                 }else{
-                    $columnName = $column->column_name;             
+                    $columnName = $column->column_name;
                 }
                 array_push($result, array(
                     'name' => $column->name,
                     'value' => $data->$columnName,
                     'type' => 'default'
-                )); 
+                ));
             }
         }
         return $result;

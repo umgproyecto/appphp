@@ -2,15 +2,14 @@
 
 namespace Tests\Unit;
 
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Spatie\Permission\Models\Role;
-use Illuminate\Support\Facades\DB;
-use Tests\TestCase;
 use App\Models\Form;
 use App\Models\FormField;
 use App\Models\Status;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Support\Facades\DB;
+use Spatie\Permission\Models\Role;
+use Tests\TestCase;
 
 class BreadTest extends TestCase
 {
@@ -68,7 +67,7 @@ class BreadTest extends TestCase
         $this->helperCreateFormField($form->id, 'description');
         $this->helperCreateFormField($form->id, 'status_id', true);
     }
-    
+
     public function testIndex(){
         $user = factory('App\User')->states('admin')->create();
         Role::create(['name' => 'admin']);
@@ -92,9 +91,9 @@ class BreadTest extends TestCase
         );
         $response = $this->actingAs($user)->post('/api/bread', $postData);
         $response->assertStatus(200)->assertJson([
-            
+
                 'status' => 'lackcolumns',
-            
+
         ]);
     }
 

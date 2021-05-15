@@ -2,15 +2,11 @@
 
 namespace Tests\Unit;
 
+use App\Models\Folder;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Http\UploadedFile;
 use Spatie\Permission\Models\Role;
 use Tests\TestCase;
-use App\Models\Folder;
-
-use Illuminate\Http\UploadedFile;
-use Illuminate\Support\Facades\Storage;
 
 class MediaTest extends TestCase
 {
@@ -251,7 +247,7 @@ class MediaTest extends TestCase
         $media = $folder->getMedia()->first();
         $this->assertDatabaseHas('media',['id' => $media->id, 'model_id' => $folder->id]);
     }
-  
+
     public function testFileMove(){
         $user = factory('App\User')->states('admin')->create();
         Role::create(['name' => 'admin']);

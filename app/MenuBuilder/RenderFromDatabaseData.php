@@ -5,7 +5,6 @@
 */
 
 namespace App\MenuBuilder;
-use App\MenuBuilder\MenuBuilder;
 
 class RenderFromDatabaseData{
 
@@ -27,7 +26,7 @@ class RenderFromDatabaseData{
     }
 
 
-    
+
     private function dropdownLoop($id){
         for($i = 0; $i<count($this->data); $i++){
             if($this->data[$i]['parent_id'] == $id){
@@ -41,7 +40,7 @@ class RenderFromDatabaseData{
             }
         }
     }
-    
+
     private function addDropdown($data){
         $this->mb->beginDropdown($data['id'], $data['href'], $data['name'], $data['icon']);
         $this->dropdownLoop($data['id']);

@@ -1,14 +1,14 @@
 <?php
 
+use App\Models\Client;
+use App\Models\Person;
+use App\Models\RoleHierarchy;
+use App\User;
+use Faker\Factory as Faker;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Faker\Factory as Faker;
 use Illuminate\Support\Str;
 use Spatie\Permission\Models\Role;
-use App\User;
-use App\Models\Person;
-use App\Models\Client;
-use App\Models\RoleHierarchy;
 
 class UsersAndNotesSeeder extends Seeder
 {
@@ -115,14 +115,26 @@ class UsersAndNotesSeeder extends Seeder
             ]);
         }
         /* insert persons */
-
+        $city = [
+            'Quetzaltenango',
+            'Totonicapan',
+            'Solola',
+            'Qiche',
+            'Huehuetenango',
+            'Jutiapa',
+            'Escuintla',
+            'San Marcos',
+            'Santa Rosa',
+            'Zacapa',
+        ];
+//        rand ( ) : int
         for ($i =0; $i<$numberOfPersons; $i++){
             $person = Person::create([
                 'first_name' => $faker->name(),
                 'last_name' => $faker->name(),
                 'surname' => $faker->lastName,
                 'last_surname' => $faker->lastName,
-                'direction' => Str::random(10),
+                'direction' => $city[ rand(0,9)],
                 'telephone' => 1234567,
                 'email' => $faker->unique()->safeEmail
             ]);
@@ -130,7 +142,6 @@ class UsersAndNotesSeeder extends Seeder
         }
 
         $clientID = array();
-
         for($i = 1; $i<30; $i++ ){
             $client = Client::create([
                 'people_id' => $i,

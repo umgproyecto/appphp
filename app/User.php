@@ -2,19 +2,18 @@
 
 namespace App;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Tymon\JWTAuth\Contracts\JWTSubject;
 use Spatie\Permission\Traits\HasRoles;
+use Tymon\JWTAuth\Contracts\JWTSubject;
 
 class User extends Authenticatable implements JWTSubject
 {
     use Notifiable;
     use SoftDeletes;
     use HasRoles;
- 
+
     /**
      * Get the identifier that will be stored in the subject claim of the JWT.
      *
@@ -33,7 +32,7 @@ class User extends Authenticatable implements JWTSubject
     public function getJWTCustomClaims()
     {
         return [];
-    }    
+    }
 
     /**
      * The attributes that are mass assignable.
@@ -65,10 +64,10 @@ class User extends Authenticatable implements JWTSubject
     protected $dates = [
         'deleted_at'
     ];
-    
+
     protected $guard_name = 'api';
 
-    protected $attributes = [ 
+    protected $attributes = [
         'menuroles' => 'user',
     ];
 }

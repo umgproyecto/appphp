@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[46],{495:function(e,n,t){"use strict";t.r(n);var s={name:"Wages"},a=t(0),c=Object(a.a)(s,(function(){var e=this.$createElement;return(this._self._c||e)("div")}),[],!1,null,"68ed9e96",null);n.default=c.exports}}]);

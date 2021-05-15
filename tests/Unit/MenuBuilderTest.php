@@ -2,10 +2,8 @@
 
 namespace Tests\Unit;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Tests\TestCase;
 use App\MenuBuilder\MenuBuilder;
+use Tests\TestCase;
 
 
 class MenuBuilderTest extends TestCase
@@ -104,7 +102,7 @@ class MenuBuilderTest extends TestCase
         $this->assertSame($provided, $result);
     }
 
-    /** 
+    /**
      * @return void
      */
     public function testAddSingleTitleWitchIcon()
@@ -123,7 +121,7 @@ class MenuBuilderTest extends TestCase
         $this->assertSame($provided, $result);
     }
 
-    /** 
+    /**
      * @return void
      */
     public function testAddSingleTitleWitchDefaultIconType()
@@ -142,7 +140,7 @@ class MenuBuilderTest extends TestCase
         $this->assertSame($provided, $result);
     }
 
-    /** 
+    /**
      * @return void
      */
     public function testAddSingleTitleNoIcon()
@@ -159,7 +157,7 @@ class MenuBuilderTest extends TestCase
         $this->assertSame($provided, $result);
     }
 
-    /** 
+    /**
      * @return void
      */
     public function testAddThreeTitle()
@@ -188,7 +186,7 @@ class MenuBuilderTest extends TestCase
         $this->assertSame($provided, $result);
     }
 
-    /** 
+    /**
      * @return void
      */
     public function testBeginDropdownWitchIcon()
@@ -209,7 +207,7 @@ class MenuBuilderTest extends TestCase
         $this->assertSame($provided, $result);
     }
 
-    /** 
+    /**
      * @return void
      */
     public function testBeginDropdownWitchDefaultIconType()
@@ -230,7 +228,7 @@ class MenuBuilderTest extends TestCase
         $this->assertSame($provided, $result);
     }
 
-    /** 
+    /**
      * @return void
      */
     public function testBeginDropdownWitchNoIcon()
@@ -249,7 +247,7 @@ class MenuBuilderTest extends TestCase
         $this->assertSame($provided, $result);
     }
 
-    /** 
+    /**
      * @return void
      */
     public function testThreeBeginDropdown()
@@ -287,7 +285,7 @@ class MenuBuilderTest extends TestCase
         $this->assertSame($provided, $result);
     }
 
-    /** 
+    /**
      * @return void
      */
     public function testBeginDropdownWitchTwoElements()
@@ -414,7 +412,7 @@ class MenuBuilderTest extends TestCase
                 'name' => 'nameTwo',
                 'href' => '/href',
                 'hasIcon' => false
-            ) 
+            )
         );
         $mb = new MenuBuilder();
         $mb->addTitle(1, 'name');

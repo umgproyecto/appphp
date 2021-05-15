@@ -3,8 +3,6 @@
 namespace Tests\Unit;
 
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Spatie\Permission\Models\Role;
 use Tests\TestCase;
 
@@ -95,7 +93,7 @@ class UserTest extends TestCase
         $response->assertSee($userTwo->name)->assertSee($userTwo->email);
         $response->assertStatus(200)->assertJson([
             'name' => $userTwo->name,
-            'email' => $userTwo->email,  
+            'email' => $userTwo->email,
         ]);
     }
 
@@ -110,7 +108,7 @@ class UserTest extends TestCase
         $response = $this->actingAs($user, 'api')->get('/api/users/'.$user->id . '/edit');
         $response->assertStatus(200)->assertJson([
             'name' => $user->name,
-            'email' => $user->email,  
+            'email' => $user->email,
         ]);
     }
 

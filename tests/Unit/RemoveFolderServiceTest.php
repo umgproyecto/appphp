@@ -2,21 +2,15 @@
 
 namespace Tests\Unit;
 
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Spatie\Permission\Models\Role;
-use Tests\TestCase;
 use App\Models\Folder;
-
-use Illuminate\Http\UploadedFile;
-
 use App\Services\RemoveFolderService;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Tests\TestCase;
 
 class RemoveFolderServiceTest extends TestCase
 {
     use DatabaseMigrations;
-    
+
     public function testFindFolderChildrens(){
         $folder = new Folder();
         $folder->name = 'test1';

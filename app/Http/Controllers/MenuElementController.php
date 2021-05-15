@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-//use App\Services\EditMenuViewService;
-use App\Models\Menurole;    
 use App\Http\Menus\GetSidebarMenu;
 use App\Models\Menulist;
+use App\Models\Menurole;
 use App\Models\Menus;
-use Illuminate\Validation\Rule;
 use App\Services\RolesService;
+use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
+
+//use App\Services\EditMenuViewService;
 
 class MenuElementController extends Controller
 {
@@ -80,7 +81,7 @@ class MenuElementController extends Controller
             ->orderBy('menus.sequence', 'asc')->get();
         return response()->json(
             $result
-        ); 
+        );
     }
 
     public function create(){

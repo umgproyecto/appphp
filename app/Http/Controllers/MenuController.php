@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Http\Menus\GetSidebarMenu;
+use Illuminate\Http\Request;
 
 class MenuController extends Controller
 {
@@ -23,7 +23,7 @@ class MenuController extends Controller
             }
         } catch (Exception $e) {
             $roles = '';
-        }   
+        }
         if($request->has('menu')){
             $menuName = $request->input('menu');
         }else{

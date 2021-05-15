@@ -16,10 +16,12 @@ class CreateSalesTable extends Migration
         Schema::create('sales', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->double('total');
-            $table->date('applies_to_date');
+            $table->integer('amount');
+
             $table->text('status');
             $table->integer('users_id')->unsigned();
             $table->integer('status_id')->unsigned();
+            $table->integer('product_id')->unsigned();
             $table->timestamps();
         });
     }
